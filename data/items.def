@@ -1,0 +1,2598 @@
+# Ammot types are defined in file data/ammotype.def
+#
+# Available fire modes:
+# FIRE_SINGLE | FIRE_DOUBLE | FIRE_TRIPLE | FIRE_BURST
+#
+# Grenades properties:
+# 
+# Explosive   - PWR - damage,    RNG - range
+# Smoke       - PWR - how many turns works, RNG - how much gas to add
+# Power_Shield - PWR - how many turns works, RNG - range
+# Incendiary  - PWR - temperature,      RNG - range
+# Sensor      - after activation looks for a monster around, then activates other properties
+#
+# WARNING: CATEGORY MUST BE AFTER THE NAME!
+
+[TRASH]
+#NAME = "Trash"
+NAME = "폐품"
+#DESCRIPTION = "A pile of trash."
+DESCRIPTION = "폐품 덩어리."
+COLOR = 8
+CATEGORY = "GARBAGE_SPACESHIP"
+WEIGHT = 300
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Garbage"
+NAME = "쓰레기"
+#DESCRIPTION = "Some bits of random garbage."
+DESCRIPTION = "이것저것에서 뜯겨져 나온 쓰레기."
+COLOR = 8
+CATEGORY = "GARBAGE_SPACESHIP"
+WEIGHT = 300
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Broken Glass"
+NAME = "깨진 유리"
+#DESCRIPTION = "Some pieces of broken glass. Watch your fingers."
+DESCRIPTION = "깨진 유리 조각. 베이지 않게 조심하자."
+CATEGORY = "GARBAGE_SPACESHIP"
+WEIGHT = 100
+HIT POINTS = 3
+
+[TRASH]
+#NAME = "Metal Trinket"
+NAME = "금속 조각"
+#DESCRIPTION = "A kind of unidentifiable trinket made of metal."
+DESCRIPTION = "정체를 알 수 없는 금속 조각."
+CATEGORY = "GARBAGE_SPACESHIP"
+WEIGHT = 100
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Rubbish"
+NAME = "찌꺼기"
+#DESCRIPTION = "Some rubbish. What did you expect?"
+DESCRIPTION = "찌꺼기. 내가 뭘 기대한거지?"
+CATEGORY = "GARBAGE_SPACESHIP"
+WEIGHT = 500
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Organic Rubbish"
+NAME = "유기체 찌꺼기"
+#DESCRIPTION = "Some strange rubbish of indeterminate organic origin."
+DESCRIPTION = "정체를 알 수 없는 이상한 유기체 찌꺼기."
+TILE = "%"
+COLOR = 3
+CATEGORY = "GARBAGE_ORGANIC"
+WEIGHT = 300
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Rotten Rubbish"
+NAME = "썩은 찌꺼기"
+#DESCRIPTION = "Smelly rubbish, definitely organic, and probably rotten."
+DESCRIPTION = "냄새가 고약한 썩은 유기체 찌꺼기."
+TILE = "%"
+COLOR = 7
+CATEGORY = "GARBAGE_ORGANIC"
+WEIGHT = 200
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Smelly Gunk"
+NAME = "냄새나는 찐득한 액체"
+#DESCRIPTION = "A glob of sticky and smelly gunk. Get rid of it."
+DESCRIPTION = "찐득찐득하고 구린 냄새가 나는 액체 덩어리. 갖다 버려."
+CATEGORY = "GARBAGE_ORGANIC"
+WEIGHT = 400
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Sticky Blob"
+NAME = "끈적한 오물"
+#DESCRIPTION = "Yuck! You wouldn't want to put your hand into that..."
+DESCRIPTION = "우웩! 이것에 손을 담그고 싶지 않다..."
+TILE = "%"
+COLOR = 3
+CATEGORY = "GARBAGE_ORGANIC"
+WEIGHT = 400
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Human Hand"
+NAME = "인간의 손"
+#DESCRIPTION = "A severed hand."
+DESCRIPTION = "찢겨나간 손."
+TILE = "%"
+COLOR = 4
+CATEGORY = "GARBAGE_HUMAN_PARTS"
+WEIGHT = 200
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Human Foot"
+NAME = "인간의 발"
+#DESCRIPTION = "A severed foot."
+DESCRIPTION = "찢겨나간 발."
+TILE = "%"
+COLOR = 4
+CATEGORY = "GARBAGE_HUMAN_PARTS"
+WEIGHT = 200
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Human Arm"
+NAME = "인간의 팔"
+#DESCRIPTION = "A sleeve, with the arm still inside."
+DESCRIPTION = "소매자락인데, 안에 팔이 들어있다."
+TILE = "%"
+COLOR = 4
+CATEGORY = "GARBAGE_HUMAN_PARTS"
+WEIGHT = 400
+HIT POINTS = 10
+
+[TRASH]
+#NAME = "Human Leg"
+NAME = "인간의 다리"
+#DESCRIPTION = "A severed leg with some shreds of a trouser leg."
+DESCRIPTION = "바지 조각이 붙어있는 채로 찢겨나간 다리."
+TILE = "%"
+COLOR = 4
+CATEGORY = "GARBAGE_HUMAN_PARTS"
+WEIGHT = 1000
+HIT POINTS = 10
+
+[CORPSE]
+#NAME = "Human Female"
+NAME = "여자"
+#DESCRIPTION = "Disgusting! A mutilated female corpse. At least, you suppose it is female."
+DESCRIPTION = "토할 거 같다! 사지가 찢긴 여자의 시체. 최소한 여자인 건 알아 볼 수 있다."
+TILE = "%"
+COLOR = 4
+CATEGORY = "GARBAGE_HUMAN_PARTS"
+WEIGHT = 10000
+HIT POINTS = 15
+
+[CORPSE]
+#NAME = "Human"
+NAME = "남자"
+#DESCRIPTION = "The mutilated corpse of a man."
+DESCRIPTION = "사지가 찢긴 남자의 시체."
+TILE = "%"
+COLOR = 4
+CATEGORY = "GARBAGE_HUMAN_PARTS"
+WEIGHT = 10000
+HIT POINTS = 15
+
+[TRASH]
+#NAME = "Human Male Head"
+NAME = "남자의 머리"
+#DESCRIPTION = "A severed male head."
+DESCRIPTION = "찢어진 남자의 머리."
+TILE = "%"
+COLOR = 4
+CATEGORY = "GARBAGE_HUMAN_PARTS"
+WEIGHT = 4000
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Human Female Head"
+NAME = "여자의 머리"
+#DESCRIPTION = "A severed head, formerly female."
+DESCRIPTION = "원래는 어떤 여자의 몸에 붙어 있었던, 찢어진 머리."
+TILE = "%"
+COLOR = 4
+CATEGORY = "GARBAGE_HUMAN_PARTS"
+WEIGHT = 4000
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Human Ear"
+NAME = "인간의 귀"
+#DESCRIPTION = "A severed ear covered in clotted blood."
+DESCRIPTION = "피가 말라붙은 찢어진 귀."
+TILE = "%"
+COLOR = 4
+CATEGORY = "GARBAGE_HUMAN_PARTS"
+WEIGHT = 50
+HIT POINTS = 1
+
+[TRASH]
+#NAME = "Burned Human Part"
+NAME = "불탄 인간의 장기"
+#DESCRIPTION = "A fried piece of meat. Something tells you it was probably originally human tissue."
+DESCRIPTION = "구운 고기 조각. 아무래도 원래는 인간의 신체 조직이었던 것 같다."
+COLOR = 4
+TILE = "%"
+CATEGORY = "GARBAGE_HUMAN_PARTS"
+WEIGHT = 1000
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Burned Human Head"
+NAME = "불탄 인간의 머리"
+#DESCRIPTION = "A fried human head."
+DESCRIPTION = "구운 인간 머리."
+COLOR = 4
+TILE = "%"
+CATEGORY = "GARBAGE_HUMAN_PARTS"
+WEIGHT = 3000
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Clod of Soil"
+NAME = "흙 더미"
+#DESCRIPTION = "A large clod of soil."
+DESCRIPTION = "커다란 흙 더미."
+COLOR = 6
+TILE = ";"
+CATEGORY = "GARBAGE_ROCKS"
+WEIGHT = 3000
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Fragile Stone"
+NAME = "부스러지는 돌"
+#DESCRIPTION = "A round, fragile stone."
+DESCRIPTION = "쉽게 부스러지는 둥근 돌 조각."
+COLOR = 7
+TILE = ";"
+CATEGORY = "GARBAGE_ROCKS"
+WEIGHT = 1000
+HIT POINTS = 3
+
+[TRASH]
+#NAME = "Black Stone"
+NAME = "검은 돌"
+#DESCRIPTION = "A black shiny stone. Probably a coal."
+DESCRIPTION = "시컴은 반짝이는 돌. 아마 석탄인 것 같다."
+COLOR = 8
+TILE = ";"
+CATEGORY = "GARBAGE_ROCKS"
+WEIGHT = 500
+HIT POINTS = 5
+
+[TRASH]
+#NAME = "Piece Of Ore"
+NAME = "광물 조각"
+#DESCRIPTION = "A dirty piece of ore."
+DESCRIPTION = "더러운 광물 조각."
+COLOR = 8
+TILE = ";"
+CATEGORY = "GARBAGE_ROCKS"
+WEIGHT = 1000
+HIT POINTS = 10
+
+[TRASH]
+#NAME = "Garbage Cleaner"
+NAME = "청소기"
+TILE = "^"
+#DESCRIPTION = "A cleaning tool for utility bots. It works by converting matter directly into energy."
+DESCRIPTION = "유틸리티봇이 사용하는 청소기. 수집한 물질을 즉시 에너지로 전환시키며 동작한다."
+COLOR = 11
+CATEGORY = "UTILITY_CLEANER"
+WEIGHT = 1000
+HIT POINTS = 5
+
+[PROGRAMMATOR]
+#NAME = "Simple Programming Tool"
+NAME = "기본 프로그램 설계기"
+#DESCRIPTION = "Allows to convert enemy CPU into friendly one. Programming abilities required."
+DESCRIPTION = "적대적인 프로세서를 동료로 전환시키는 도구. 프로그램 설계 기술이 필요하다."
+COLOR = 14
+CATEGORY = "CPU_TOOL_1"
+WEIGHT = 1000
+HIT POINTS = 25
+PROPERTIES = CONVERT_CPU
+
+[PROGRAMMATOR]
+#NAME = "CPU Programming Tool"
+NAME = "전문 프로그램 설계기"
+#DESCRIPTION = "Allows to convert enemy CPU into friendly one or to write"
+DESCRIPTION = "적대적인 프로세서를 동료로 전환시키는 도구이며, 프로세서를 직접 설계할 수도 있다."
+COLOR = 15
+CATEGORY = "CPU_TOOL_2"
+WEIGHT = 1000
+HIT POINTS = 25
+PROPERTIES = CONVERT_CPU | WRITE_PROGRAM
+
+[REPAIR_KIT]
+#NAME = "Simple Repair Tool"
+NAME = "기본 수리 도구"
+#DESCRIPTION = "! NOT WRITTEN YET !"
+DESCRIPTION = "! NOT WRITTEN YET !"
+COLOR = 7
+CATEGORY = "REPAIR_SET_1"
+WEIGHT = 1000
+HIT POINTS = 25
+PURPOSE = REPAIR_HP
+
+[REPAIR_KIT]
+#NAME = "Automatic Repair Tool"
+NAME = "자동 수리 도구"
+#DESCRIPTION = "! NOT WRITTEN YET !"
+DESCRIPTION = "! NOT WRITTEN YET !"
+COLOR = 5
+CATEGORY = "REPAIR_SET_3"
+WEIGHT = 1000
+HIT POINTS = 20
+PURPOSE = REPAIR_HP
+REGENERATION TIME = 500
+
+[REPAIR_KIT]
+#NAME = "Armor Improving Tool"
+NAME = "갑옷 향상 도구"
+#DESCRIPTION = "This tool fixes some disadvantages of armor."
+DESCRIPTION = "이 도구로 갑옷의 일부 단점을 개선할 수 있다."
+COLOR = 9
+CATEGORY = "REPAIR_SET_2"
+WEIGHT = 1000
+HIT POINTS = 25
+PURPOSE = REPAIR_FIX_ARMOR
+
+[AMMO]
+#NAME = "Bullet 8mm"
+NAME = "8mm 피스톨탄"
+#DESCRIPTION = "An 8mm round."
+DESCRIPTION = "8mm 구경 총탄."
+CATEGORY = "AMMO_LIGHT_PISTOL"
+PWR = 4
+TYPE = "8MM"
+WEIGHT = 50
+PROPERTIES = NORMAL
+
+[AMMO]
+#NAME = "Bullet 9mm"
+NAME = "9mm 피스톨탄"
+#DESCRIPTION = "A 9mm bullet."
+DESCRIPTION = "9mm 구경 총탄."
+CATEGORY = "AMMO_LIGHT_PISTOL_2"
+PWR = 5
+TYPE = "9MM"
+WEIGHT = 50
+PROPERTIES = NORMAL
+
+[BATTERY]
+#NAME = "Machine Battery"
+NAME = "기계용 배터리"
+COLOR = 11
+#DESCRIPTION = "Heavy battery used in heavy machines. Low capacity."
+DESCRIPTION = "무거운 기계에 사용되는 무거운 배터리. 용량이 적다."
+CATEGORY = "BATTERY_1"
+BATTERY CAPACITY = 20
+WEIGHT = 5000
+HIT POINTS = 30
+
+[BATTERY]
+#NAME = "Nanotech Battery"
+NAME = "나노테크 배터리"
+COLOR = 11
+#DESCRIPTION = "High-tech battery with regenerator."
+DESCRIPTION = "재충전 기능을 갖춘 하이테크 배터리."
+CATEGORY = "BATTERY_3"
+BATTERY CAPACITY = 50
+REGENERATION SPEED = -30
+WEIGHT = 500
+HIT POINTS = 5
+
+[BATTERY]
+#NAME = "Small Nanotech Battery"
+NAME = "소형 나노테크 배터리"
+COLOR = 11
+#DESCRIPTION = "Small high-tech battery with solar regenerator."
+DESCRIPTION = "태양광 재충전 기능을 갖춘 소형 하이테크 배터리."
+CATEGORY = "BATTERY_3"
+BATTERY CAPACITY = 30
+REGENERATION SPEED = -60
+WEIGHT = 500
+HIT POINTS = 5
+
+
+[BATTERY]
+#NAME = "Mining Battery"
+NAME = "광업용 배터리"
+COLOR = 9
+#DESCRIPTION = "Battery to feed mining tools with simple reactor."
+DESCRIPTION = "광업 도구에 사용되는 단순한 반응방식의 배터리."
+CATEGORY = "BATTERY_2"
+BATTERY CAPACITY = 40
+REGENERATION SPEED = -10
+WEIGHT = 2500
+HIT POINTS = 50
+
+[BATTERY]
+#NAME = "Self-Charging Accumulator"
+NAME = "자가발전 응축 배터리"
+COLOR = 9
+#DESCRIPTION = "! NOT WRITTEN YET !"
+DESCRIPTION = "! NOT WRITTEN YET !"
+CATEGORY = "BATTERY_3"
+BATTERY CAPACITY = 100
+REGENERATION SPEED = 1
+WEIGHT = 2000
+HIT POINTS = 15
+
+[BATTERY]
+#NAME = "Small Reactor"
+NAME = "소형 리액터"
+COLOR = 9
+#DESCRIPTION = "! NOT WRITTEN YET ! - an enemy tool"
+DESCRIPTION = "! NOT WRITTEN YET ! - an enemy tool"
+CATEGORY = "BATTERY_4"
+BATTERY CAPACITY = 150
+REGENERATION SPEED = 3
+WEIGHT = 2000
+HIT POINTS = 40
+
+[AMMO]
+#NAME = "Rifle Bullet 6.25mm"
+NAME = "6.25mm 라이플탄"
+#DESCRIPTION = "A 6.25mm cartridge for rifles."
+DESCRIPTION = "라이플에 장착하는 6.25mm 탄창."
+CATEGORY = "AMMO_LIGHT_RIFLE"
+PWR = 6
+TYPE = "6_25MM"
+WEIGHT = 50
+PROPERTIES = NORMAL
+
+[AMMO]
+#NAME = "Turret Plasma Beam"
+NAME = "터렛용 플라즈마 빔"
+#DESCRIPTION = "! NOT WRITTEN YET !"
+DESCRIPTION = "! NOT WRITTEN YET !"
+CATEGORY = "AMMO_BUNKER_GUN"
+PWR = 20
+TYPE = "BUNKER_GUN"
+WEIGHT = 100
+PROPERTIES = NORMAL|ENERGY
+
+[AMMO]
+#NAME = "Rifle Bullet 6.69mm"
+NAME = "6.69mm 라이플탄"
+#DESCRIPTION = "A 6.69mm cartridge for heavy rifles."
+DESCRIPTION = "중형 라이플에 장착하는 6.69mm 탄창."
+CATEGORY = "AMMO_HEAVY_RIFLE"
+PWR = 9
+TYPE = "6_69MM"
+WEIGHT = 80
+PROPERTIES = NORMAL
+
+[AMMO]
+#NAME = "Nail"
+NAME = "못"
+#DESCRIPTION = "A long nail. It can be used as a projectile with the right type of tool."
+DESCRIPTION = "길다란 못. 적절한 도구의 발사체로 사용될 수 있다."
+CATEGORY = "AMMO_IMPROVISED"
+PWR = 2
+TYPE = "NAILS"
+WEIGHT = 10
+PROPERTIES = NORMAL|ARMOR_PERCING
+
+[RANGED_WEAPON]
+#NAME = "Nail Pistol"
+NAME = "못 피스톨"
+#DESCRIPTION = "A metallic tool that can be used as an improvised gun."
+DESCRIPTION = "간이 무기로 사용될 수 있는 철제 도구."
+CATEGORY = "WEAPON_RANGE_IMPROVISED_1"
+IN MAGAZINE = "AMMO_IMPROVISED"
+DMG = 1
+COLOR = 11
+ACC = 1
+PWR = 4
+TYPE = "NAILS"
+WEIGHT = 800
+HIT POINTS = 100
+REQ STRENGTH = 4
+MAGAZINE CAPACITY = 3
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/nailpistol/fire1.wav"
+SOUND RELOAD = "data/sounds/weapons/pistol8mm/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "Nail Gun"
+NAME = "못 총"
+#DESCRIPTION = "A heavy-duty tool firing the same nails as the Nail Pistol, but with a semi-automatic action and a greater feed capacity."
+DESCRIPTION = "못 피스톨처럼 못을 발사하는 대형 도구인데, 반자동 방식이며 장전 용량이 크다."
+CATEGORY = "WEAPON_RANGE_IMPROVISED_2"
+IN MAGAZINE = "AMMO_IMPROVISED"
+DMG = 2
+COLOR = 11
+ACC = 0
+PWR = 4
+TYPE = "NAILS"
+WEIGHT = 2800
+HIT POINTS = 100
+REQ STRENGTH = 7
+MAGAZINE CAPACITY = 15
+FIRE MODE = FIRE_TRIPLE
+AVAILABLE FIRE MODES = FIRE_SINGLE | FIRE_TRIPLE
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/nailpistol/fire1.wav"
+SOUND FIRE TRIPLE = "data/sounds/weapons/nailpistol/fire1.wav"
+SOUND RELOAD = "data/sounds/weapons/pistol8mm/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "Pistol 8mm"
+NAME = "8mm 피스톨"
+#DESCRIPTION = "A standard-issue 8mm handgun."
+DESCRIPTION = "표준형 8mm 권총."
+CATEGORY = "WEAPON_LIGHT_PISTOL"
+IN MAGAZINE = "AMMO_LIGHT_PISTOL"
+DMG = 1
+COLOR = 11
+ACC = 1
+PWR = 6
+TYPE = "8MM"
+WEIGHT = 1200
+HIT POINTS = 100
+REQ STRENGTH = 5
+MAGAZINE CAPACITY = 8
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/pistol8mm/fire1.ogg"
+SOUND RELOAD = "data/sounds/weapons/pistol8mm/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "Berreta 9mm 'Wolff'"
+NAME = "9mm 베레타 '욾흐'"
+#DESCRIPTION = "The famous high-quality 9mm pistol."
+DESCRIPTION = "유명한 고성능 9mm 피스톨."
+CATEGORY = "WEAPON_LIGHT_PISTOL"
+IN MAGAZINE = "AMMO_LIGHT_PISTOL_2"
+DMG = 2
+COLOR = 11
+ACC = 1
+PWR = 9
+TYPE = "9MM"
+WEIGHT = 1200
+HIT POINTS = 60
+REQ STRENGTH = 5
+MAGAZINE CAPACITY = 12
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/pistol8mm/fire1.ogg"
+SOUND RELOAD = "data/sounds/weapons/pistol8mm/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "Combat Shotgun"
+NAME = "전투용 산탄총"
+#DESCRIPTION = "A semiautomatic scattergun designed to look like its user means business."
+DESCRIPTION = "사용자가 제대로 일처리를 할 수 있도록 설계된 반자동 산탄총."
+CATEGORY = "WEAPON_LIGHT_SHOTGUN"
+IN MAGAZINE = "AMMO_LIGHT_SHOTGUN"
+DMG = 2
+COLOR = 11
+ACC = 0
+PWR = 6
+TYPE = "SHOTGUN_SHELLS"
+WEIGHT = 3500
+HIT POINTS = 100
+REQ STRENGTH = 8
+MAGAZINE CAPACITY = 8
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/shotgun1/fire1.wav"
+SOUND RELOAD = "data/sounds/weapons/shotgun1/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "Compact Laser Pistol"
+NAME = "소형 레이저 피스톨"
+#DESCRIPTION = "This pistol is a compact version of the standard laser pistol. Its size allows it to be concealed, so as not to be detected by potential targets. It has a longer battery life, but reduced power."
+DESCRIPTION = "이 피스톨은 표준형 레이저 피스톨을 경량화 한 것이다. 크기가 작아 목표가 눈치채지 못하도록 숨기기에 용이하다. 배터리를 오래 사용할 수 있지만 위력은 약하다."
+CATEGORY = "WEAPON_ENERGY_1"
+IN MAGAZINE = "AMMO_ENERGY_1"
+DMG = 1
+COLOR = 12
+# person is easier to hit in H2H when wield this
+DEF = -4
+ACC = 3
+PWR = 7
+TYPE = "LASER_1"
+WEIGHT = 500
+HIT POINTS = 20
+REQ STRENGTH = 3
+MAGAZINE CAPACITY = 1
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE
+SKILL TO USE = ENERGY WEAPONS
+PROPERTIES = ENERGY
+
+SOUND FIRE SINGLE = "data/sounds/weapons/laser1/fire1.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/laser1/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "Hunting Rifle"
+NAME = "수렵용 라이플"
+#DESCRIPTION = "A light, reliable semiautomatic longarm with a simple, rugged design."
+DESCRIPTION = "단순하고 오래된 디자인의 가볍고 정교한 반자동 화기."
+CATEGORY = "WEAPON_LIGHT_RIFLE"
+IN MAGAZINE = "AMMO_LIGHT_RIFLE"
+DMG = 2
+COLOR = 11
+ACC = 4
+PWR = 6
+TYPE = "6_25MM" 
+WEIGHT = 3000
+HIT POINTS = 50
+REQ STRENGTH = 6
+MAGAZINE CAPACITY = 15
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/rifle1/fire1.wav"
+SOUND RELOAD = "data/sounds/weapons/rifle1/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+
+[RANGED_WEAPON]
+#NAME = "LR-30 Assault Rifle"
+NAME = "침투용 라이플 LR-30"
+#DESCRIPTION = "An automatic rifle whose main selling points are the large magazine and low cost."
+DESCRIPTION = "탄창이 크고 가격이 저렴한 점을 판매 전략으로 삼은 자동 라이플."
+CATEGORY = "WEAPON_LIGHT_RIFLE"
+IN MAGAZINE = "AMMO_LIGHT_RIFLE"
+DMG = 2
+COLOR = 11
+ACC = 2
+PWR = 6
+TYPE = "6_25MM" 
+WEIGHT = 3000
+HIT POINTS = 80
+REQ STRENGTH = 7
+MAGAZINE CAPACITY = 35
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE|FIRE_TRIPLE
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/rifle3/fire1.wav"
+SOUND FIRE TRIPLE = "data/sounds/weapons/rifle3/fire3.wav"
+SOUND RELOAD = "data/sounds/weapons/rifle3/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "Standard Sentry Gun Rifle"
+NAME = "표준형 센트리건 라이플"
+#DESCRIPTION = "A compact autogun designed for easy interchangeability and both hand-held and sentry gun use."
+DESCRIPTION = "손으로 사용할 수도 있고 센트리건에도 장착할 수도 있도록 손쉬운 전환이 가능한 소형 자동화기."
+CATEGORY = "WEAPON_SENTRY_GUN_1"
+IN MAGAZINE = "AMMO_LIGHT_RIFLE"
+DMG = 1
+COLOR = 11
+ACC = 2
+PWR = 1
+TYPE = "6_25MM"
+WEIGHT = 5000
+HIT POINTS = 80
+REQ STRENGTH = 9
+MAGAZINE CAPACITY = 21
+FIRE MODE = FIRE_TRIPLE
+AVAILABLE FIRE MODES = FIRE_TRIPLE
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE TRIPLE = "data/sounds/weapons/sentrygun/fire3.wav"
+SOUND RELOAD = "data/sounds/weapons/rifle3/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "Bunker Gun Cannon"
+NAME = "벙커건 캐논"
+#DESCRIPTION = "! NOT WRITTEN YET !"
+DESCRIPTION = "! NOT WRITTEN YET !"
+CATEGORY = "ITEM_UNIQUE"
+IN MAGAZINE = "AMMO_BUNKER_GUN"
+DMG = 2
+COLOR = 10
+ACC = 2
+PWR = 10
+TYPE = "BUNKER_GUN" 
+WEIGHT = 15000
+HIT POINTS = 80
+REQ STRENGTH = 9
+MAGAZINE CAPACITY = 1
+FIRE MODE = FIRE_TRIPLE
+AVAILABLE FIRE MODES = FIRE_TRIPLE
+SKILL TO USE = BIG_GUNS
+PROPERTIES = ENERGY
+
+SOUND FIRE TRIPLE = "data/sounds/weapons/bunkergun/fire3.wav"
+SOUND RELOAD = "data/sounds/weapons/rifle3/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "SeaGull 8mm Pistol"
+NAME = " 8mm 피스톨 '씨걸'"
+#DESCRIPTION = "The standard-issue NAVY sidearm, a long-barreled revolver, very reliable."
+DESCRIPTION = "우주군의 표준 보조무기. 포신이 긴 리볼버로 매우 정확하다."
+CATEGORY = "WEAPON_LIGHT_PISTOL"
+IN MAGAZINE = "AMMO_LIGHT_PISTOL"
+DMG = 3
+COLOR = 11
+ACC = 4
+PWR = 7
+TYPE = "8MM"
+WEIGHT = 1500
+HIT POINTS = 120
+REQ STRENGTH = 7
+MAGAZINE CAPACITY = 6
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/pistol8mm/fire1.ogg"
+SOUND RELOAD = "data/sounds/weapons/pistol8mm/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "M-Pistol Weasel 8mm"
+NAME = "8mm M-피스톨 '위즐'"
+#DESCRIPTION = "A semi-automatic 8mm pistol with an extended magazine."
+DESCRIPTION = "탄창이 확장된 반자동 8mm 피스톨."
+CATEGORY = "WEAPON_LIGHT_PISTOL"
+IN MAGAZINE = "AMMO_LIGHT_PISTOL"
+DMG = 3
+COLOR = 11
+ACC = 0
+PWR = 6
+TYPE = "8MM"
+WEIGHT = 1500
+HIT POINTS = 100
+REQ STRENGTH = 6
+MAGAZINE CAPACITY = 15
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE|FIRE_TRIPLE
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/semiauto2/fire1.wav"
+SOUND FIRE TRIPLE = "data/sounds/weapons/semiauto2/fire3.wav"
+SOUND RELOAD = "data/sounds/weapons/pistol8mm/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "AR-28 Assault Rifle 6.25mm"
+NAME = "6.25mm 침투용 라이플 AR-28"
+#DESCRIPTION = "The standard assault rifle used by Marines and Earth forces."
+DESCRIPTION = "우주군과 지구의 군대에서 사용되는 표준형 침투용 라이플."
+CATEGORY = "WEAPON_LIGHT_RIFLE_2"
+IN MAGAZINE = "AMMO_LIGHT_RIFLE"
+DMG = 4
+COLOR = 11
+ACC = 1
+PWR = 6
+TYPE = "6_25MM"
+WEIGHT = 1500
+HIT POINTS = 100
+REQ STRENGTH = 6
+MAGAZINE CAPACITY = 25
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE|FIRE_TRIPLE|FIRE_BURST
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/autorifle/fire1.wav"
+SOUND FIRE TRIPLE = "data/sounds/weapons/autorifle/fire3.wav"
+SOUND FIRE BURST = "data/sounds/weapons/autorifle/fire3.wav"
+SOUND RELOAD = "data/sounds/weapons/autorifle/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "M-35 Wolverine"
+NAME = "M-35 울버린"
+#DESCRIPTION = "A very modern, carbine-format assault rifle usually issued to military spacecraft crews."
+DESCRIPTION = "매우 현대적인 카빈형 침투용 라이플. 우주군이 주로 사용한다."
+CATEGORY = "WEAPON_LIGHT_RIFLE_2"
+IN MAGAZINE = "AMMO_LIGHT_RIFLE"
+DMG = 4
+COLOR = 11
+ACC = 3
+PWR = 6
+TYPE = "6_25MM"
+WEIGHT = 2500
+HIT POINTS = 100
+REQ STRENGTH = 7
+MAGAZINE CAPACITY = 35
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE|FIRE_TRIPLE|FIRE_BURST
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/autorifle/fire1.wav"
+SOUND FIRE TRIPLE = "data/sounds/weapons/autorifle/fire3.wav"
+SOUND FIRE BURST = "data/sounds/weapons/autorifle/fire3.wav"
+SOUND RELOAD = "data/sounds/weapons/autorifle/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "H&K SA Shotgun"
+NAME = "H&K SA 산탄총"
+#DESCRIPTION = "A long, black shotgun, produced by Hecklen & Koll."
+DESCRIPTION = "긴 검은색 산탄총. Hecklen & Koll 사가 제조했다."
+CATEGORY = "WEAPON_LIGHT_SHOTGUN"
+IN MAGAZINE = "AMMO_LIGHT_SHOTGUN"
+DMG = 4
+COLOR = 6
+ACC = 2
+PWR = 6
+TYPE = "SHOTGUN_SHELLS"
+WEIGHT = 4000
+REQ STRENGTH = 10
+MAGAZINE CAPACITY = 12
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE|FIRE_DOUBLE
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/shotgun1/fire1.wav"
+SOUND FIRE DOUBLE = "data/sounds/weapons/shotgun1/fire2.wav"
+SOUND RELOAD = "data/sounds/weapons/shotgun1/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "Mossberg ML4"
+NAME = "모스버그 ML4"
+#DESCRIPTION = "The ML4 is a well known and popular model of shotgun. Despite being a 20-year-old design, it is still a great weapon."
+DESCRIPTION = "ML4는 유명한 산탄총 모델이다. 20년은 지난 구식이지만 여전히 위력이 뛰어나다."
+CATEGORY = "WEAPON_LIGHT_SHOTGUN"
+IN MAGAZINE = "AMMO_LIGHT_SHOTGUN"
+DMG = 4
+COLOR = 6
+ACC = 3
+PWR = 6
+TYPE = "SHOTGUN_SHELLS"
+WEIGHT = 3000
+REQ STRENGTH = 10
+MAGAZINE CAPACITY = 6
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/shotgun1/fire1.wav"
+SOUND RELOAD = "data/sounds/weapons/shotgun1/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[RANGED_WEAPON]
+#NAME = "Double Barreled Shotgun"
+NAME = "이중 포신 산탄총"
+#DESCRIPTION = "A shotgun with two barrels, mostly used on Earth for hunting birds."
+DESCRIPTION = "포신이 두 개 달린 산탄총이다. 주로 지구에서 새를 사냥할 때 사용된다."
+CATEGORY = "WEAPON_LIGHT_SHOTGUN_2"
+IN MAGAZINE = "AMMO_LIGHT_SHOTGUN"
+DMG = 5
+COLOR = 6
+ACC = -2
+PWR = 6
+TYPE = "SHOTGUN_SHELLS"
+WEIGHT = 4000
+REQ STRENGTH = 12
+MAGAZINE CAPACITY = 2
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE|FIRE_DOUBLE
+SKILL TO USE = SMALL GUNS
+
+SOUND FIRE SINGLE = "data/sounds/weapons/shotgun1/fire1.wav"
+SOUND FIRE DOUBLE = "data/sounds/weapons/shotgun1/fire2.wav"
+SOUND RELOAD = "data/sounds/weapons/shotgun1/reload.wav"
+SOUND GUN EMPTY = "data/sounds/weapons/pistol8mm/empty.wav"
+
+[AMMO]
+#NAME = "Shotgun Shell"
+NAME = "산탄총탄"
+#DESCRIPTION = "A typical buckshot shell."
+DESCRIPTION = "전형적인 산탄총용 탄."
+CATEGORY = "AMMO_LIGHT_SHOTGUN"
+COLOR = 9
+PWR = 8
+ACC = -4
+TYPE = "SHOTGUN_SHELLS"
+WEIGHT = 80
+PROPERTIES = NORMAL
+
+[AMMO]
+#NAME = "EM Shotgun Shell"
+NAME = "전자기파 산탄총탄"
+#DESCRIPTION = "Shotgun shell with electromagnetic trigger."
+DESCRIPTION = "전자기파가 탑재된 산탄총용 탄."
+CATEGORY = "AMMO_LIGHT_SHOTGUN"
+COLOR = 11
+PWR = 8
+ACC = 1
+TYPE = "SHOTGUN_SHELLS"
+WEIGHT = 100
+PROPERTIES = NORMAL|ELECTRIC
+
+[AMMO]
+#NAME = "HiAcc Shotgun Shell"
+NAME = "고명중률 산탄총탄"
+#DESCRIPTION = "The special shape gives this shell better accuracy, but somewhat lower stopping power."
+DESCRIPTION = "이 탄은 특이한 모양으로 인해 명중률이 높지만 위력은 다소 약하다."
+CATEGORY = "AMMO_LIGHT_SHOTGUN"
+COLOR = 9
+PWR = 6
+ACC = 2
+TYPE = "SHOTGUN_SHELLS"
+WEIGHT = 100
+PROPERTIES = NORMAL
+
+[AMMO]
+#NAME = "Laser Beam"
+NAME = "레이저 빔"
+#DESCRIPTION = "! NOT WRITTEN YET !"
+DESCRIPTION = "! NOT WRITTEN YET !"
+CATEGORY = "AMMO_ENERGY_1"
+#power in this case is multiplyer of energy usage
+PWR = 4
+TYPE = "LASER_1"
+WEIGHT = 100
+PROPERTIES = NORMAL|ENERGY
+
+
+[AMMO]
+#NAME = "Sharp Shotgun Shell"
+NAME = "날카로운 산탄총탄"
+#DESCRIPTION = "A flechette shell with superior penetration but terrible accuracy due to the wide spread."
+DESCRIPTION = "강철날이 들어 있어 장갑을 뚫을 수 있지만, 넓게 퍼지는 탓에 명중률은 매우 낮다."
+CATEGORY = "AMMO_LIGHT_SHOTGUN"
+COLOR = 6
+PWR = 6
+ACC = -4
+TYPE = "SHOTGUN_SHELLS"
+WEIGHT = 100
+PROPERTIES = NORMAL|ARMOR_PERCING
+
+[HAND_WEAPON]
+#NAME = "Metal Pipe"
+NAME = "쇠 파이프"
+#DESCRIPTION = "A long metal pipe. It can be used as a weapon."
+DESCRIPTION = "긴 쇠 파이프. 무기로 사용할 수 있다."
+CATEGORY = "WEAPON_H2H_IMPROVISED_1"
+ATTACK = "쇠 파이프로 후려 갈긴다."
+DMG = 4
+HIT = 2
+DEF = 2
+HIT POINTS = 150
+WEIGHT = 1000
+REQ STRENGTH = 5
+COLOR = 11
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/pipe/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Wrench"
+NAME = "렌치"
+#DESCRIPTION = "A heavy wrench can be a deadly weapon in skilled hands."
+DESCRIPTION = "무거운 렌치는 적절한 자의 손에 사용되면 무서운 무기가 될 수 있다."
+COLOR = 8
+CATEGORY = "WEAPON_H2H_IMPROVISED_1"
+ATTACK = "렌치를 휘두른다."
+DMG = 4
+HIT = 3
+DEF = 1
+HIT POINTS = 100
+WEIGHT = 1000
+REQ STRENGTH = 5
+COLOR = 11
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/wrench/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Hammer"
+NAME = "망치"
+#DESCRIPTION = "A large and heavy (about 5 kg) hammer."
+DESCRIPTION = "크고 무거운 (5 kg 정도) 망치."
+COLOR = 7
+CATEGORY = "WEAPON_H2H_IMPROVISED_1"
+ATTACK = "망치로 때린다."
+DMG = 5
+HIT = 2
+DEF = 0
+HIT POINTS = 120
+WEIGHT = 5000
+REQ STRENGTH = 5
+COLOR = 11
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/hammer/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Knife"
+NAME = "식칼"
+#DESCRIPTION = "A small knife. It's not too impressive as a weapon, but it's better than going barehanded..."
+DESCRIPTION = "식칼. 그리 대단한 무기는 아니지만, 맨손으로 가는 것보다는 나을지도..."
+CATEGORY = "WEAPON_H2H_IMPROVISED_1"
+ATTACK = "식칼로 찌른다."
+DMG = 4
+HIT = 3
+DEF = 0
+HIT POINTS = 80
+WEIGHT = 400
+REQ STRENGTH = 4
+COLOR = 11
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/knife/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Small Razor Blade"
+NAME = "소형 칼날"
+#DESCRIPTION = "A wickedly sharp circular blade designed for robot, rather than human, use."
+DESCRIPTION = "요상하게 생긴 날카로운 원형 날로, 사람보다는 로봇이 쓰도록 디자인된 듯하다."
+CATEGORY = "WEAPON_H2H_ROBOTS_1"
+ATTACK = "칼날로 벤다."
+DMG = 4
+HIT = 3
+DEF = 0
+HIT POINTS = 120
+WEIGHT = 1500
+REQ STRENGTH = 6
+COLOR = 7
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/razor/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Medium Razor Blade"
+NAME = "중형 칼날"
+#DESCRIPTION = "A wickedly sharp circular blade designed for robot, rather than human, use."
+DESCRIPTION = "요상하게 생긴 날카로운 원형 날로, 사람보다는 로봇이 쓰도록 디자인된 듯하다."
+CATEGORY = "WEAPON_H2H_ROBOTS_2"
+ATTACK = "칼날로 벤다."
+DMG = 10
+HIT = 5
+DEF = 3
+HIT POINTS = 120
+WEIGHT = 1500
+REQ STRENGTH = 10
+COLOR = 7
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/razor/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Axe"
+NAME = "도끼"
+#DESCRIPTION = "A handy axe can be used as a deadly weapon. You've seen it done in so many horror movies..."
+DESCRIPTION = "도끼는 무서운 무기가 될 수 있다. 공포영화에서 많이 보지 않았는가..."
+CATEGORY = "WEAPON_H2H_IMPROVISED_2"
+ATTACK = "도끼로 찍었다."
+DMG = 6
+HIT = 3
+DEF = 1
+HIT POINTS = 100
+WEIGHT = 4000
+REQ STRENGTH = 6
+COLOR = 7
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/axe/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Crowbar"
+NAME = "쇠 지레"
+#DESCRIPTION = "A heavy, black crowbar. It could be of some use as a weapon."
+DESCRIPTION = "무거운 검은 쇠 지레. 무기로 쓸 수 있을 듯하다."
+CATEGORY = "WEAPON_H2H_IMPROVISED_2"
+ATTACK = "쇠 지레를 휘두른다."
+DMG = 5
+HIT = 2
+DEF = 2
+HIT POINTS = 100
+WEIGHT = 3000
+REQ STRENGTH = 5
+COLOR = 7
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/pipe/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Wooden Rail"
+NAME = "나무 판"
+#DESCRIPTION = "A thick wooden rail."
+DESCRIPTION = "얇은 나무 판."
+CATEGORY = "WEAPON_H2H_IMPROVISED_2"
+ATTACK = "나무 판을 휘두른다."
+DMG = 2
+HIT = 1
+DEF = 2
+HIT POINTS = 40
+WEIGHT = 3000
+REQ STRENGTH = 5
+COLOR = 6
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/wood/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Large Hammer"
+NAME = "대형 망치"
+#DESCRIPTION = "A large hammer."
+DESCRIPTION = "커다란 망치."
+CATEGORY = "WEAPON_H2H_IMPROVISED_2"
+ATTACK = "대형 망치로 강타한다."
+DMG = 7
+HIT = 3
+DEF = 0
+HIT POINTS = 150
+WEIGHT = 6000
+REQ STRENGTH = 9
+COLOR = 7
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/hammer/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Security Stun Baton 200K"
+NAME = "보안용 전기충격기 200K"
+#DESCRIPTION = "! NOT WRITTEN YET !"
+DESCRIPTION = "! NOT WRITTEN YET !"
+CATEGORY = "WEAPON_ENERGY_IMPROVISED_1"
+ATTACK = "전기충격기를 휘두른다."
+DMG = 2
+HIT = 1
+DEF = 2
+DMG ENERGY = 10
+HIT ENERGY = 0
+DEF ENERGY = 0
+HIT POINTS = 50
+WEIGHT = 1000
+REQ STRENGTH = 5
+COLOR = 15
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+# NORMAL i NORMAL sie zeruja, bo opeacja XOR przy wlaczonych
+PROPERTIES ENERGY = STUN|ELECTRIC
+
+SOUND USED = "data/sounds/weapons/stun/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Chainsaw"
+NAME = "전기톱"
+#DESCRIPTION = "An old chainsaw, produced by "Thorvan & Son Tools" more than 20 years ago."
+DESCRIPTION = "낡은 전기톱. 20년쯤 전 'Thorvan & Son Tools' 사에서 만든 것."
+CATEGORY = "WEAPON_H2H_IMPROVISED_2"
+ATTACK = "전기톱으로 썬다."
+DMG = 0
+HIT = 0
+DEF = 0
+DMG ENERGY = 8
+HIT ENERGY = 2
+DEF ENERGY = 1
+HIT POINTS = 50
+WEIGHT = 6000
+REQ STRENGTH = 9
+COLOR = 7
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/chainsaw/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Mining Drill"
+NAME = "광업용 드릴"
+#DESCRIPTION = "A huge power drill used by miners to crack ore into smaller pieces. Requires strong arms to wield effectively."
+DESCRIPTION = "광부들이 광물을 파낼 때 사용하는 강력한 위력의 드릴. 잘 사용하려면 팔힘이 세야 한다."
+CATEGORY = "WEAPON_H2H_IMPROVISED_2"
+ATTACK = "드릴을 박아 넣는다."
+DMG = 0
+HIT = 0
+DEF = 0
+DMG ENERGY = 8
+HIT ENERGY = 3
+DEF ENERGY = 1
+HIT POINTS = 50
+WEIGHT = 15000
+REQ STRENGTH = 13
+COLOR = 8
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/drill/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Nanotech Scalpel"
+NAME = "나노테크 수술 칼"
+#DESCRIPTION = "! NOT WRITTEN YET !"
+DESCRIPTION = "! NOT WRITTEN YET !"
+CATEGORY = "WEAPON_ENERGY_IMPROVISED_1"
+ATTACK = "수술 칼로 찌른다."
+DMG = 1
+HIT = 0
+DEF = 0
+DMG ENERGY = 4
+HIT ENERGY = 3
+DEF ENERGY = 0
+HIT POINTS = 50
+WEIGHT = 500
+REQ STRENGTH = 5
+COLOR = 8
+SKILL TO USE = MELEE WEAPONS
+PROPERTIES = NORMAL
+PROPERTIES ENERGY = NORMAL|ARMOR_PERCING
+SOUND USED = "data/sounds/weapons/knife/hit.wav" 
+
+[ARMOR]
+#NAME = "Power Armor"
+NAME = "파워 아머"
+#DESCRIPTION = "! NOT WRITTEN YET !"
+DESCRIPTION = "! NOT WRITTEN YET !"
+COLOR = 8
+CATEGORY = "ARMOR_LIGHT_ENERGY"
+ARM = 2
+MOD_DEX = -2
+ARM ENERGY = 3
+DEX ENERGY = 2
+STR ENERGY = 2
+SPD ENERGY = 5
+WEIGHT = 10000
+HIT POINTS = 100
+
+[ARMOR]
+#NAME = "Kevlar Vest"
+NAME = "케블라 조끼"
+#DESCRIPTION = "This is an old type of vest made of the archaic ballistic fiber, Kevlar."
+DESCRIPTION = "과거 비행용 섬유로 개발된 케블라로 만든 구형 방탄조끼."
+COLOR = 8
+CATEGORY = "ARMOR_LIGHT_MILITARY"
+ARM = 2
+MOD_DEX = -2
+WEIGHT = 5000
+HIT POINTS = 80
+
+[ARMOR]
+#NAME = "Military Bulletproof Vest"
+NAME = "군용 방탄조끼"
+#DESCRIPTION = "An old type of military flak jacket. It doesn't offer much protection against today's weapons."
+DESCRIPTION = "과거 군대에서 사용되던 방탄 조끼. 오늘날의 무기에는 별 효과가 없다."
+COLOR = 2
+CATEGORY = "ARMOR_LIGHT_MILITARY"
+ARM = 2
+MOD_DEX = -1
+MOD_SPD = -5
+WEIGHT = 6000
+HIT POINTS = 100
+PROPERTIES = ARMOR_PERCING
+
+[ARMOR]
+#NAME = "Light Infantry Armor"
+NAME = "가벼운 보병 갑옷"
+#DESCRIPTION = "A full suit of armor used by light infantry on long sorties, where logistics difficulties make more advanced powered armor impractical."
+DESCRIPTION = "A full suit of armor used by light infantry on long sorties, where logistics difficulties make more advanced powered armor impractical."
+COLOR = 7
+CATEGORY = "ARMOR_LIGHT_MILITARY"
+ARM = 2
+MOD_DEX = -1
+MOD_SPD = -3
+WEIGHT = 4000
+HIT POINTS = 120
+
+[ARMOR]
+#NAME = "Protective Body Suit"
+NAME = "방호복"
+#DESCRIPTION = "This is a body suit of hard protective plates."
+DESCRIPTION = "단단한 방어용 철판으로 만든 갑옷."
+COLOR = 1
+CATEGORY = "ARMOR_LIGHT_MILITARY"
+ARM = 3
+MOD_DEX = -2
+WEIGHT = 5000
+HIT POINTS = 80
+
+[ARMOR]
+#NAME = "Heavy Body Armor"
+NAME = "무거운 갑옷"
+#DESCRIPTION = "An older type of heavy armor. Very heavy..."
+DESCRIPTION = "무거운 구식 갑옷이다. 정말 무겁다..."
+COLOR = 1
+CATEGORY = "ARMOR_HEAVY_MILITARY"
+ARM = 4
+MOD_DEX = -2
+MOD_SPD = -5
+WEIGHT = 9000
+HIT POINTS = 200
+
+[ARMOR]
+#NAME = "Colonial Marine Armor"
+NAME = "콜로니얼 마린 용병 갑옷"
+DESCRIPTION = "! NOT WRITTEN YET !"
+COLOR = 2
+CATEGORY = "ARMOR_HEAVY_MILITARY"
+ARM = 4
+MOD_DEX = -2
+MOD_SPD = -5
+WEIGHT = 6000
+HIT POINTS = 100
+
+[ARMOR]
+#NAME = "Space Rangers Armor"
+NAME = "은하 레인저 갑옷"
+DESCRIPTION = "! NOT WRITTEN YET !"
+COLOR = 4
+CATEGORY = "ARMOR_HEAVY_MILITARY"
+ARM = 4
+MOD_DEX = -1
+MOD_SPD = -5
+WEIGHT = 4000
+HIT POINTS = 70
+
+[ARMOR]
+#NAME = "Trooper Armor"
+NAME = "군용 갑옷"
+#DESCRIPTION = "This is the basic armor of SpaceTroopers."
+DESCRIPTION = "우주군이 사용하는 기본적인 방어구다."
+COLOR = 2
+CATEGORY = "ARMOR_HEAVY_MILITARY"
+ARM = 3
+MOD_DEX = -1
+MOD_SPD = -5
+WEIGHT = 4000
+HIT POINTS = 70
+
+[ARMOR]
+#NAME = "Leather Jacket"
+NAME = "가죽 자켓"
+#DESCRIPTION = "A leather jacket. Brown. Well sewed."
+DESCRIPTION = "가죽 자켓. 갈색이다. 바느질이 잘 되어 있다."
+COLOR = 6
+CATEGORY = "ARMOR_SPACE_SHIP"
+ARM = 1
+MOD_DEX = -1
+WEIGHT = 1000
+
+HIT POINTS = 40
+
+[ARMOR]
+#NAME = "Medical Clothing"
+NAME = "연구복"
+#DESCRIPTION = "A white laboratory coat."
+DESCRIPTION = "연구실에서 입는 하얀색 가운."
+COLOR = 15
+CATEGORY = "ARMOR_SPACE_SHIP"
+ARM = 1
+MOD_SPD = -5
+WEIGHT = 1000
+HIT POINTS = 25
+
+[ARMOR]
+#NAME = "Workwear"
+NAME = "작업복"
+#DESCRIPTION = "Typical jeans coveralls. Fashionable among mechanics."
+DESCRIPTION = "전형적인 작업복. 정비 노동자들이 입는 옷 치고는 멋진 편이다."
+COLOR = 7
+CATEGORY = "ARMOR_SPACE_SHIP"
+ARM = 1
+MOD_DEX = -1
+WEIGHT = 2000
+HIT POINTS = 40
+
+[ARMOR]
+#NAME = "Mining Suit"
+NAME = "광업복"
+#DESCRIPTION = "A heavy protective overcoat designed for miners. Mostly effective against falling rocks, it badly impedes movement."
+DESCRIPTION = "광부들을 위해 디자인 된 전신복이다. 각종 낙하물로부터 몸을 보호해주지만, 움직임을 둔하게 만든다."
+COLOR = 7
+CATEGORY = "ARMOR_MINES"
+ARM = 2
+MOD_SPD = -5
+WEIGHT = 5000
+HIT POINTS = 40
+
+[HAND_WEAPON]
+#NAME = "Bare Hands"
+NAME = "맨손"
+#DESCRIPTION = "A pair of bare hands."
+DESCRIPTION = "맨손 두 개."
+ATTACK = "맨손으로 때린다."
+TILE = "*"
+COLOR = 6
+DMG = 3
+HIT = 0
+DEF = 0
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/barehands/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Small Claws"
+NAME = "작은 발톱"
+#DESCRIPTION = "A set of small claws."
+DESCRIPTION = "작은 발톱들."
+ATTACK = "발톱으로 할퀸다."
+TILE = "*"
+DMG = 3
+HIT = 4
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/clawssmall/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Genotroid Claws"
+NAME = "제노트로이드 발톱"
+#DESCRIPTION = "A set of medium claws."
+DESCRIPTION = "중형 발톱들."
+ATTACK = "발톱으로 할퀸다."
+TILE = "*"
+DMG = 5
+HIT = 4
+DEF = 2
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/genotroid/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Claw Arms"
+NAME = "발톱 달린 팔"
+DESCRIPTION = "! NOT WRITTEN YET ! - Mad Doctor's hands"
+ATTACK = "발톱 달린 팔을 휘두른다."
+TILE = "*"
+DMG = 6
+HIT = 4
+DEF = 4
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL
+SOUND USED = "data/sounds/weapons/clawssmall/hit.wav" 
+
+[HAND_WEAPON]
+NAME = "Scorpion Tail"
+#NAME = "전갈 꼬리"
+CATEGORY = "ITEM_UNIQUE"
+DESCRIPTION = "! NOT WRITTEN YET ! - Mad Doctor's tail"
+ATTACK = "꼬리로 찌른다."
+TILE = "*"
+DMG = 10
+HIT = 0
+DEF = 0
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL|CHEM_POISON
+
+SOUND USED = "data/sounds/weapons/tail/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Needle"
+NAME = "수술용 바늘"
+COLOR = 6
+DESCRIPTION = "! NOT WRITTEN YET !"
+ATTACK = "찌른다."
+TILE = "|"
+DMG = 5
+HIT = 0
+DEF = 0
+PROPERTIES = NORMAL|ARMOR_PERCING
+# disappears after turn or when hit
+PURPOSE = TEMP_MISSILE
+
+SOUND USED = "data/sounds/weapons/needle/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Sticky Spittle"
+NAME = "끈끈한 분비액"
+COLOR = 2
+DESCRIPTION = "! NOT WRITTEN YET ! - Mad Doctor's "
+ATTACK = "끈적인다."
+TILE = "*"
+DMG = 10
+HIT = 10
+DEF = 0
+PROPERTIES = PARALYZE
+# disappears after turn or when hit
+PURPOSE = TEMP_MISSILE
+
+SOUND USED = "data/sounds/weapons/spittle/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Large Claws"
+NAME = "큰 발톱"
+#DESCRIPTION = "A set of large claws."
+DESCRIPTION = "큰 발톱들."
+ATTACK = "발톱으로 할퀸다."
+TILE = "*"
+DMG = 6
+HIT = 6
+DEF = 4
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL
+
+SOUND USED = "data/sounds/weapons/clawslarge/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Small Teeth"
+NAME = "작은 이빨"
+#DESCRIPTION = "A small set of teeth."
+DESCRIPTION = "작은 이빨들."
+ATTACK = "이빨로 깨문다."
+TILE = "*"
+DMG = 5
+HIT = 3
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL
+
+SOUND USED = "data/sounds/weapons/teeth/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Small Radioactive Teeth"
+NAME = "작은 방사능 이빨"
+#DESCRIPTION = "Small contaminated teeth."
+DESCRIPTION = "오염된 작은 이빨들."
+ATTACK = "이빨로 깨문다."
+TILE = "*"
+DMG = 5
+HIT = 3
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL|RADIOACTIVE
+
+SOUND USED = "data/sounds/weapons/teeth/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Small Poisoning Teeth"
+NAME = "작은 독 이빨"
+#DESCRIPTION = "Small poisonous teeth."
+DESCRIPTION = "독을 뿜는 작은 이빨들."
+ATTACK = "이빨로 깨문다."
+TILE = "*"
+DMG = 5
+HIT = 3
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL|CHEM_POISON
+
+SOUND USED = "data/sounds/weapons/teeth/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Large Poisoning Teeth"
+NAME = "큰 독 이빨"
+#DESCRIPTION = "Big poisonous fangs."
+DESCRIPTION = "독을 뿜는 큰 어금니들."
+ATTACK = "이빨로 깨문다."
+TILE = "*"
+DMG = 10
+HIT = 3
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL|CHEM_POISON
+
+SOUND USED = "data/sounds/weapons/teeth/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Large Radioactive Teeth"
+NAME = "큰 방사능 이빨"
+#DESCRIPTION = "Big radioactive fangs."
+DESCRIPTION = "방사능을 방출하는 큰 어금니들."
+ATTACK = "이빨로 깨문다."
+TILE = "*"
+DMG = 10
+HIT = 3
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL|RADIOACTIVE
+
+SOUND USED = "data/sounds/weapons/teeth/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Paralyzing and poisoning teeth"
+NAME = "마비 독 이빨"
+#DESCRIPTION = "A large set of poisonous teeth that can paralyze!"
+DESCRIPTION = "마비시키는 독을 뿜어내는 커다란 이빨들!"
+ATTACK = "이빨로 깨문다."
+TILE = "*"
+DMG = 10
+HIT = 4
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL|CHEM_POISON|PARALYZE
+
+SOUND USED = "data/sounds/weapons/teeth/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Vampiric Teeth"
+NAME = "흡혈 이빨"
+#DESCRIPTION = "Some small and sharp teeth."
+DESCRIPTION = "작고 날카로운 이빨들."
+ATTACK = "이빨로 깨문다."
+TILE = "*"
+DMG = 7
+HIT = 4
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL|VAMPIRIC
+
+SOUND USED = "data/sounds/weapons/flyleech/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Sting"
+NAME = "침"
+#DESCRIPTION = "A large sting with poison dripping from it."
+DESCRIPTION = "독이 흘러나오는 커다란 침."
+ATTACK = "침으로 찌른다."
+TILE = "*"
+DMG = 6
+HIT = 3
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL|CHEM_POISON
+
+SOUND USED = "data/sounds/weapons/sting/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Poisoning Tentacles"
+NAME = "독 촉수"
+#DESCRIPTION = "A bunch of large poisonous tentacles."
+DESCRIPTION = "독이 묻은 커다란 촉수."
+ATTACK = "독 촉수로 빨아들인다."
+TILE = "*"
+DMG = 5
+HIT = 8
+DEF = 8
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL|CHEM_POISON
+
+SOUND USED = "data/sounds/weapons/sucker/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Poisoning and Paralyzing Tentacles"
+NAME = "마비 독 촉수"
+#DESCRIPTION = "A bunch of large poisonous and paralyzing tentacles."
+DESCRIPTION = "마비 독을 내뿜는 커다란 촉수."
+ATTACK = "마비 독 촉수로 빨아들인다."
+TILE = "*"
+DMG = 8
+HIT = 8
+DEF = 8
+SKILL TO USE = UNARMED
+PROPERTIES = CHEM_POISON|PARALYZE
+
+SOUND USED = "data/sounds/weapons/sucker/hit.wav" 
+
+[SKIN]
+#NAME = "Human Skin"
+NAME = "맨몸"
+COLOR = 6
+ARM = 0
+
+[SKIN]
+#NAME = "Small Fur"
+NAME = "작은 털가죽"
+ARM = 1
+
+[SKIN]
+#NAME = "Soft Skin"
+NAME = "부드러운 피부"
+ARM = 0
+
+[SKIN]
+#NAME = "Searchlight Shell"
+NAME = "서치라이트 본체"
+COLOR = 11
+ARM = 2
+
+[HAND_WEAPON]
+#NAME = "Light"
+NAME = "불빛"
+COLOR = 11
+ATTACK = "불빛을 비춘다."
+TILE = "*"
+DMG = 0
+HIT = 0
+DEF = 0
+SKILL TO USE = UNARMED
+
+[HAND_WEAPON]
+#NAME = "Dog Teeth & Claws"
+NAME = "이빨과 발톱"
+#DESCRIPTION = "Small teeth and sharp claws."
+DESCRIPTION = "작은 이빨들과 날카로운 발톱들."
+ATTACK = "이빨로 깨물고 발톱으로 할퀸다."
+TILE = "*"
+DMG = 5
+HIT = 5
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL
+
+SOUND USED = "data/sounds/weapons/dog/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Sharp Teeth"
+NAME = "날카로운 이빨"
+#DESCRIPTION = "A row of small, sharp teeth."
+DESCRIPTION = "작고 날카로운 이빨들."
+ATTACK = "이빨로 깨문다."
+TILE = "*"
+DMG = 5
+HIT = 3
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL|ARMOR_PERCING
+
+SOUND USED = "data/sounds/weapons/teethsharp/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Paralyzing Sucker"
+NAME = "마비 빨판"
+ATTACK = "빨판으로 빨아들인다."
+TILE = "*"
+DMG = 10
+HIT = 5
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = PARALYZE
+
+SOUND USED = "data/sounds/weapons/flyleech/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Large Jaws"
+NAME = "거대한 아가리"
+ATTACK = "거대한 아가리로 깨문다."
+TILE = "*"
+DMG = 8
+HIT = 8
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL
+
+SOUND USED = "data/sounds/weapons/jaws/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Worm Tail"
+NAME = "지렁이 꼬리"
+ATTACK = "꼬리로 휘감는다."
+TILE = "*"
+DMG = 10
+HIT = 5
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL|ARMOR_PERCING|CHEM_POISON
+
+SOUND USED = "data/sounds/weapons/tail/hit.wav" 
+
+[HAND_WEAPON]
+#NAME = "Worm Segment"
+NAME = "지렁이 몸통"
+ATTACK = "몸통으로 부딛힌다."
+TILE = "*"
+DMG = 7
+HIT = 5
+DEF = 1
+SKILL TO USE = UNARMED
+PROPERTIES = NORMAL
+
+SOUND USED = "data/sounds/weapons/segment/hit.wav" 
+
+[SKIN]
+#NAME = "Hard Skin"
+NAME = "딱딱한 피부"
+ARM = 2
+
+[SKIN]
+#NAME = "Hard Scales"
+NAME = "딱딱한 비늘"
+ARM = 4
+PROPERTIES = CHEM_POISON
+
+[SKIN]
+#NAME = "Chitin Armor"
+NAME = "갑각류 껍데기"
+ARM = 4
+
+[GRENADE]
+#NAME = "Personal Field"
+NAME = "개인용 방어막"
+#DESCRIPTION = "A handheld generator that can quickly create a weak forcefield in the immediate vicinity."
+DESCRIPTION = "주위에 미약한 방어막을 생성할 수 있는 휴대용 즉석 방어막 생성기."
+CATEGORY = "GRENADE_ENERGY_1"
+PWR = 10
+RNG = 1
+DLY = 0
+WEIGHT = 300
+PROPERTIES = POWER_SHIELD
+
+[GRENADE]
+#NAME = "Force Field"
+NAME = "에너지 방어막"
+#DESCRIPTION = "This is a hand-held forcefield generator. A forcefield works by drastically decreasing the kinectic energy of moving objects. It's usually used on Space Ships as a protection from natural and weapon attacks. This generator generates a small field."
+DESCRIPTION = "휴대용 방어막 생성기. 방어막은 접근하는 물체의 운동 에너지를 급격히 감소시킨다. 주로 각종 자연적인 위험과 적의 무기로부터 우주선을 보호하기 위해 사용된다. 이 방어막 생성기는 좁은 방어막을 만들어낸다."
+CATEGORY = "GRENADE_ENERGY_1"
+PWR = 80
+RNG = 1
+DLY = 6
+WEIGHT = 300
+PROPERTIES = POWER_SHIELD
+
+[COPYOF "에너지 방어막"]
+#NAME = "Small Force Field"
+NAME = "소형 에너지 방어막"
+#DESCRIPTION = "This is a hand-held forcefield generator. A forcefield works by drastically decreasing the kinectic energy of moving objects. It's usually used on Space Ships as a protection from natural and weapon attacks. This generator generates a point field."
+DESCRIPTION = "휴대용 방어막 생성기. 방어막은 접근하는 물체의 운동 에너지를 급격히 감소시킨다. 주로 각종 자연적인 위험과 적의 무기로부터 우주선을 보호하기 위해 사용된다. 이 방어막 생성기는 아주 좁은 방어막을 만들어낸다."
+RNG = 0
+
+[COPYOF "에너지 방어막"]
+#NAME = "Large Force Field"
+NAME = "대형 에너지 방어막"
+#DESCRIPTION = "This is a hand-held forcefield generator. A forcefield works by drastically decreasing the kinectic energy of moving objects. It's usually used on Space Ships as a protection from natural and weapon attacks. This generator generates a large field."
+DESCRIPTION = "휴대용 방어막 생성기. 방어막은 접근하는 물체의 운동 에너지를 급격히 감소시킨다. 주로 각종 자연적인 위험과 적의 무기로부터 우주선을 보호하기 위해 사용된다. 이 방어막 생성기는 넓은 방어막을 만들어낸다."
+RNG = 3
+
+[COPYOF "에너지 방어막"]
+#NAME = "Force Field Anihilator"
+NAME = "에너지 방어막 제거기"
+#DESCRIPTION = "This is a force annihilator. It causes all force fields in a large area to collapse."
+DESCRIPTION = "에너지 방어막 제거기. 주변의 광범위한 구역에 있는 모든 에너지 방어막을 소멸시킨다."
+PWR = 0
+RNG = 6
+
+[GRENADE]
+#NAME = "Incendiary Grenade"
+NAME = "가연성 수류탄"
+#DESCRIPTION = "When this hand grenade explodes, it covers the area in liquid fire."
+DESCRIPTION = "이 수류탄은 폭발할 때 주변을 액체 화염으로 뒤덮는다."
+CATEGORY = "GRENADE_NORMAL_1"
+PWR = 25
+RNG = 5
+DLY = 10
+PROPERTIES = INCENDIARY
+
+SOUND EXPLOSION = "data/sounds/weapons/grenades/incendiary/explosion.wav"
+
+[GRENADE]
+#NAME = "EMP Grenade"
+NAME = "전자기파 수류탄"
+#DESCRIPTION = "EMP Grenade releases an electromagnetic wave that creates a short-circuit effect, damaging nearby electronic devices."
+DESCRIPTION = "이 수류탄은 폭발할 때 전자기파를 방출하여 주변의 전기회로에 역류를 일으켜 전자 장치를 손상시킨다."
+CATEGORY = "GRENADE_NORMAL_1"
+PWR = 25
+RNG = 5
+DLY = 0
+PROPERTIES = ELECTRIC
+
+SOUND EXPLOSION = "data/sounds/weapons/grenades/emp/explosion.wav"
+
+[GRENADE]
+#NAME = "Smoke Grenade"
+NAME = "연막 수류탄"
+#DESCRIPTION = "This hand grenade, when activated, releases thick smoke which can cover a large area."
+DESCRIPTION = "이 수류탄은 작동되면 주변의 넓은 구역을 연기로 뒤덮는다."
+CATEGORY = "GRENADE_NORMAL_1"
+PWR = 200
+RNG = 200
+DLY = 10
+PROPERTIES = SMOKE
+
+SOUND EXPLOSION = "data/sounds/weapons/grenades/gas/explosion.wav"
+
+[GRENADE]
+#NAME = "Poison-Gas Grenade"
+NAME = "독 가스 수류탄"
+DESCRIPTION = "! NOT WRITTEN YET !"
+CATEGORY = "GRENADE_NORMAL_1"
+PWR = 200
+RNG = 200
+DLY = 10
+PROPERTIES = SMOKE|CHEM_POISON
+
+SOUND EXPLOSION = "data/sounds/weapons/grenades/gas/explosion.wav"
+
+[GRENADE]
+#NAME = "Stun-Gas Grenade"
+NAME = "기절 가스 수류탄"
+DESCRIPTION = "! NOT WRITTEN YET !"
+CATEGORY = "GRENADE_NORMAL_1"
+PWR = 200
+RNG = 200
+DLY = 10
+PROPERTIES = SMOKE|STUN
+
+SOUND EXPLOSION = "data/sounds/weapons/grenades/gas/explosion.wav"
+
+[GRENADE]
+#NAME = "Paralyze-Gas Grenade"
+NAME = "마비 가스 수류탄"
+DESCRIPTION = "! NOT WRITTEN YET !"
+CATEGORY = "GRENADE_NORMAL_1"
+PWR = 200
+RNG = 200
+DLY = 10
+PROPERTIES = SMOKE|PARALYZE
+
+SOUND EXPLOSION = "data/sounds/weapons/grenades/gas/explosion.wav"
+
+[GRENADE]
+#NAME = "Hand Grenade"
+NAME = "수류탄"
+#DESCRIPTION = "A standard hand grenade. It explodes, damaging everything in range of the explosion."
+DESCRIPTION = "표준형 수류탄. 폭발 범위내의 모든 사물에 피해를 입힌다."
+CATEGORY = "GRENADE_NORMAL_1"
+PWR = 30
+RNG = 7
+DLY = 10
+PROPERTIES = EXPLOSIVE|STUN
+
+SOUND EXPLOSION = "data/sounds/weapons/grenades/explosion/explosion.wav"
+
+[GRENADE]
+#NAME = "HE Grenade"
+NAME = "강화 수류탄"
+#DESCRIPTION = "A much more powerful version of the standard hand grenade, this one will severely damage all targets in a wide area."
+DESCRIPTION = "표준형 수류탄보다 훨씬 강력한 수류판. 폭발 범위내의 모든 사물에 심각한 피해를 입힌다."
+CATEGORY = "GRENADE_NORMAL_2"
+PWR = 45
+RNG = 8
+DLY = 5
+PROPERTIES = EXPLOSIVE|STUN
+
+SOUND EXPLOSION = "data/sounds/weapons/grenades/explosion/explosion.wav"
+
+[GRENADE]
+#NAME = "Stun Grenade"
+NAME = "기절 수류탄"
+#DESCRIPTION = "A concussion grenade. It can blind and shock creatures for a few seconds."
+DESCRIPTION = "충격 수류탄. 잠깐동안 주변의 생물체들의 시각을 마비시키고 기절시킬 수 있다."
+CATEGORY = "GRENADE_NORMAL_1"
+PWR = 60
+RNG = 20
+DLY = 10
+WEIGHT = 300
+PROPERTIES = STUN
+
+SOUND EXPLOSION = "data/sounds/weapons/grenades/explosion/explosion3.wav"
+
+[GRENADE]
+#NAME = "Sensor Mine"
+NAME = "자동감지 지뢰"
+#DESCRIPTION = "The sensor mine scans its surroundings for moving creatures and explodes when one is detected nearby."
+DESCRIPTION = "자동감지 지뢰는 지나가는 생물을 감지하면 저절로 폭발한다."
+CATEGORY = "GRENADE_MINE_1"
+TILE = "^"
+PWR = 35
+RNG = 6
+DLY = 20
+PROPERTIES = SENSOR | EXPLOSIVE | STUN
+
+SOUND EXPLOSION = "data/sounds/weapons/grenades/explosion/explosion2.wav"
+
+[GRENADE]
+#NAME = "Sensor Incendiary Mine"
+NAME = "자동감지 가연성 지뢰"
+#DESCRIPTION = "The sensor mine scans its surroundings for moving creatures and explodes when one is detected nearby. This mine causes a burst of liquid flame."
+DESCRIPTION = "자동감지 지뢰는 지나가는 생물을 감지하면 저절로 폭발한다. 이 지뢰는 액체 화염을 내뿜는다."
+CATEGORY = "GRENADE_MINE_1"
+TILE = "^"
+COLOR = 4
+PWR = 25
+RNG = 5
+DLY = 20
+PROPERTIES = SENSOR | INCENDIARY
+
+SOUND EXPLOSION = "data/sounds/weapons/grenades/incendiary/explosion.wav"
+
+[CONTROLLER]
+NAME = "Door Opener"
+HIT POINTS = 10
+PURPOSE = AUTO_DOOR_OPEN
+
+[CONTROLLER]
+NAME = "Weak Corridor in Mines"
+HIT POINTS = 1
+PURPOSE = WEAK_CORRIDOR_IN_MINES
+
+[CONTROLLER]
+NAME = "Smoke Generator"
+HIT POINTS = 1
+PURPOSE = SMOKE_GENERATOR
+
+[CONTROLLER]
+NAME = "Tutorial Advancer"
+HIT POINTS = 10000
+PURPOSE = TUTORIAL_ADVANCE
+
+[PILL]
+#NAME = "Nanorebuilding Pill"
+NAME = "나노테크 치료 알약"
+#DESCRIPTION = "This pill contains nanorobots that activate on contact with gastric acid. Nanorobots are programmed to close wounds."
+DESCRIPTION = "이 알약 속에는 나노봇들이 들어있다. 알약이 위액에 의해 녹으면 나노봇들이 동작하여 체내의 상처를 치료한다."
+COLOR = 11
+CATEGORY = "PILLS_POPULAR"
+HIT POINTS = 3
+PWR = 20
+PURPOSE = INCRASE_HP
+
+[PILL]
+#NAME = "Booster Pill"
+NAME = "신경 가속 알약"
+#DESCRIPTION = "This adrenaline-based drug stimulates your brain and body to react faster."
+DESCRIPTION = "아드레날린을 개조한 이 약물은 사용자의 뇌와 신체의 반응 속도를 증폭시킨다."
+COLOR = 12
+CATEGORY = "PILLS_POPULAR"
+HIT POINTS = 3
+PWR = 100
+PURPOSE = INCRASE_SPEED 
+
+[PILL]
+#NAME = "Mijon Pill"
+NAME = "헐크 알약"
+#DESCRIPTION = "This drug, also called 'Mighty Johnny', is the most popular pharmaceutical product of the Mijon company. It gives a great, but temporary, strength boost to the one who swallows it." 
+DESCRIPTION = "이 약은 헐크사의 유명한 약품이다. 이 약을 먹으면 잠깐동안 엄청난 힘을 발휘할 수 있다." 
+COLOR = 13
+CATEGORY = "PILLS_POPULAR"
+HIT POINTS = 3
+PWR = 200
+PURPOSE = INCRASE_STRENGTH
+
+[PILL]
+#NAME = "Antitoxin"
+NAME = "해독제"
+#DESCRIPTION = "A broad-spectrum antidote that can purify most toxins from the bloodstream."
+DESCRIPTION = "혈액 내의 여러가지 독성을 해독하는 다목적 해독제."
+COLOR = 14
+CATEGORY = "PILLS_POPULAR"
+HIT POINTS = 3
+PWR = 200
+PURPOSE = DECRASE_CHEM_POISON
+
+[PILL]
+#NAME = "AntiRad Medicine"
+NAME = "방사능 제거제"
+#DESCRIPTION = "An indispensable military drug that reduces the effects of radiation poisoning."
+DESCRIPTION = "방사능에 오염된 신체를 회복시키는 약으로 필수품이다."
+COLOR = 15
+CATEGORY = "PILLS_POPULAR"
+HIT POINTS = 3
+PWR = 200
+PURPOSE = DECRASE_RADIOACTIVE
+
+[RANGED_WEAPON]
+#NAME = "M56 Smartgun"
+NAME = "M56 스마트건"
+#DESCRIPTION = "The support weapon of the Colonial Marine Corps, with a special guidance system."
+DESCRIPTION = "콜로니얼 마린 용병 회사에서 사용하는 보조 무기. 자동 조준 시스템을 갖추고 있다."
+CATEGORY = "WEAPON_HEAVY_MACHINE_GUN"
+IN MAGAZINE = "AMMO_LIGHT_RIFLE"
+DMG = 1
+COLOR = 11
+ACC = 10
+PWR = 7
+TYPE = "6_25MM"
+WEIGHT = 10000
+HIT POINTS = 100
+REQ STRENGTH = 12
+MAGAZINE CAPACITY = 100
+FIRE MODE = FIRE_TRIPLE
+AVAILABLE FIRE MODES = FIRE_TRIPLE | FIRE_BURST
+SKILL TO USE = BIG GUNS
+
+[RANGED_WEAPON]
+#NAME = "M42 PL Rifle"
+NAME = "M42 PL 라이플"
+#DESCRIPTION = "A weapon of the Colonial Marine Corps. Very handy."
+DESCRIPTION = "콜로니얼 마린 용병 회사에서 사용하는 무기. 다루기 쉽다."
+CATEGORY = "WEAPON_LIGHT_MACHINE_GUN"
+IN MAGAZINE = "AMMO_LIGHT_RIFLE"
+DMG = 1
+COLOR = 11
+ACC = 3
+PWR = 7
+TYPE = "6_25MM"
+WEIGHT = 5000
+HIT POINTS = 100
+REQ STRENGTH = 12
+MAGAZINE CAPACITY = 30
+FIRE MODE = FIRE_SINGLE
+AVAILABLE FIRE MODES = FIRE_SINGLE | FIRE_TRIPLE
+SKILL TO USE = SMALL GUNS
+
+[RANGED_WEAPON]
+#NAME = "Minigun"
+NAME = "미니건"
+#DESCRIPTION = "A multi-barrel machine gun, capable of laying down a withering hail of lead."
+DESCRIPTION = "여러개의 포신이 달린 기관총. 압도적인 연사력을 자랑한다."
+CATEGORY = "WEAPON_HEAVY_MACHINE_GUN"
+IN MAGAZINE = "AMMO_HEAVY_RIFLE"
+DMG = 1
+COLOR = 11
+ACC = 0
+PWR = 7
+TYPE = "6_25MM"
+WEIGHT = 10000
+HIT POINTS = 100
+REQ STRENGTH = 15
+MAGAZINE CAPACITY = 200
+FIRE MODE = FIRE_BURST
+AVAILABLE FIRE MODES = FIRE_BURST
+SKILL TO USE = BIG GUNS
+
+
+# ROBOTY
+# Powloka to szkielet, zawiera iles miejsc na "nogi" (kola, gasiennice) (move slot)
+# oraz na sloty (uchwyty na bron lub inne przedmioty) (action slot)
+# Szybkosc ruchu robota jest obliczana nastepujaco:
+# S = suma move power wszystkich "nog"
+# W = waga calego robota (powloka, nogi, cpu, bron)
+# SPD = S - W/4000
+# Wiec szybkosc poruszania sie robota trzeba definiowac jego wag?
+# Szybkosz poruszania sie nie jest rowna szybkosci reakcji, do tego jest CPU i jego szybkosc.
+# Szybkosc CPU jest wykorzystywana podobnie jak u zwyklych potworow ich szybkosc
+
+[ROBOT_SHELL]
+#NAME = "Small Stationary Robot Shell"
+NAME = "소형 고정 로봇 본체"
+#DESCRIPTION = "A compact casing without attachments for motive systems."
+DESCRIPTION = "특별한 기능이 없는 소형 본체."
+COLOR = 3
+TILE = "G"
+CATEGORY = "ROBOT_SHELL_1"
+MOVE SLOTS = 0
+ACTION SLOTS = 2
+WEIGHT = 10000
+HIT POINTS = 20
+ARM = 3
+
+[ROBOT_SHELL]
+#NAME = "Tutorial Target Shell"
+NAME = "튜토리얼 타겟 본체"
+DESCRIPTION = "None"
+COLOR = 15
+TILE = "O"
+CATEGORY = "ROBOT_SHELL_UNIQUE"
+MOVE SLOTS = 0
+ACTION SLOTS = 0
+WEIGHT = 10000
+HIT POINTS = 20
+ARM = 0
+
+[ROBOT_SHELL]
+#NAME = "Bunker Gun Shell"
+NAME = "벙커건 본체"
+#DESCRIPTION = "A massive hulk of a shell for a robot gun, it sends the message 'don't mess with me' loud and clear."
+DESCRIPTION = "총포 로봇에 사용되는 거대한 본체. 그 육중함 만으로도 '까불지 마라'라는 메시지를 분명하게 전달하고 있다."
+COLOR = 4
+TILE = "G"
+CATEGORY = "ROBOT_SHELL_UNIQUE"
+MOVE SLOTS = 0
+ACTION SLOTS = 2
+WEIGHT = 100000
+HIT POINTS = 150
+ARM = 3
+
+[ROBOT_SHELL]
+#NAME = "Medium Stationary Robot Shell"
+NAME = "중형 고정 로봇 본체"
+#DESCRIPTION = "A squat shell with plenty of storage space but no place for a movement system."
+DESCRIPTION = "땅에 고정하는 로봇 본체. 저장 공간은 넓지만 이동 장치를 달 수 있는 공간은 없다."
+COLOR = 11
+TILE = "G"
+CATEGORY = "ROBOT_SHELL_2"
+MOVE SLOTS = 0
+ACTION SLOTS = 3
+WEIGHT = 15000
+HIT POINTS = 30
+ARM = 4
+
+[ROBOT_SHELL]
+#NAME = "Small Armored Stationary Robot Shell"
+NAME = "소형 장갑 고정 로봇 본체"
+#DESCRIPTION = "A heavier version of the small casing, with thick armor plating added."
+DESCRIPTION = "소형 고정 로봇 본체에 두꺼운 철판으로 중장갑을 입힌 것이다."
+COLOR = 3
+TILE = "G"
+CATEGORY = "ROBOT_SHELL_2"
+MOVE SLOTS = 0
+ACTION SLOTS = 2
+WEIGHT = 30000
+
+HIT POINTS = 60
+ARM = 6
+
+[ROBOT_SHELL]
+#NAME = "Medium Armored Stationary Robot Shell"
+NAME = "중형 장갑 고정 로봇 본체"
+#DESCRIPTION = "Originally designed as a turret for robot tanks, it certainly looks the part."
+DESCRIPTION = "원래는 탱크 로봇에 다는 터렛으로 개발된 모듈이다."
+COLOR = 11
+TILE = "G"
+CATEGORY = "ROBOT_SHELL_3"
+MOVE SLOTS = 0
+ACTION SLOTS = 3
+WEIGHT = 55000
+HIT POINTS = 80
+ARM = 7
+
+[ROBOT_SHELL]
+#NAME = "Small Quick Robot Shell"
+NAME = "소형 신속 로봇 본체"
+#DESCRIPTION = "The ubiquitous shell around which many civilian robots are designed."
+DESCRIPTION = "민간 로봇에 널리 사용되는 다목적 본체."
+COLOR = 11
+TILE = "o"
+CATEGORY = "ROBOT_SHELL_1"
+MOVE SLOTS = 1
+ACTION SLOTS = 1
+WEIGHT = 1000
+HIT POINTS = 10
+ARM = 1
+
+[ROBOT_SHELL]
+#NAME = "Small Dark Quick Robot Shell"
+NAME = "소형 검은색 신속 로봇 본체"
+#DESCRIPTION = "The ubiquitous shell around which many civilian robots are designed. This one is dark."
+DESCRIPTION = "민간 로봇에 널리 사용되는 다목적 본체. 검은색 버전이다."
+COLOR = 2
+TILE = "o"
+CATEGORY = "ROBOT_SHELL_1"
+MOVE SLOTS = 1
+ACTION SLOTS = 1
+WEIGHT = 1000
+HIT POINTS = 10
+ARM = 1
+
+
+[ROBOT_SHELL]
+#NAME = "Utility Bot Shell"
+NAME = "유틸리티봇 본체"
+#DESCRIPTION = "A large, ugly robot casing that is good for limited tasks only."
+DESCRIPTION = "크고 못생긴 로봇 본체. 제한된 용도에만 적합하다."
+COLOR = 11
+TILE = "R"
+CATEGORY = "ROBOT_SHELL_1"
+MOVE SLOTS = 2
+ACTION SLOTS = 1
+WEIGHT = 30000
+HIT POINTS = 30
+ARM = 1
+
+[ROBOT_SHELL]
+#NAME = "Small Moving Robot Shell"
+NAME = "소형 기동 로봇 본체"
+COLOR = 3
+TILE = "R"
+CATEGORY = "ROBOT_SHELL_1"
+#DESCRIPTION = "A variation of the Utility Bot shell that has had much internal structure sacrificed for additional equipment spaces."
+DESCRIPTION = "유틸리티봇 본체에 장비 수납 공간을 포기하고 내부 구조를 강화한 버전이다."
+MOVE SLOTS = 2
+ACTION SLOTS = 2
+WEIGHT = 30000
+HIT POINTS = 20
+ARM = 2
+
+[ROBOT_SHELL]
+#NAME = "Medium Moving Robot Shell"
+NAME = "중형 기동 로봇 본체"
+#DESCRIPTION = "A slightly smaller than man-sized casing, with several modular component slots."
+DESCRIPTION = "성인 남자보다 약간 작은 크기의 본체. 슬롯 몇 개를 탑재하고 있다."
+COLOR = 12
+TILE = "R"
+CATEGORY = "ROBOT_SHELL_2"
+MOVE SLOTS = 2
+ACTION SLOTS = 3
+WEIGHT = 40000
+HIT POINTS = 40
+ARM = 3
+
+[ROBOT_SHELL]
+#NAME = "Small Vehicle Robot Shell"
+NAME = "소형 차량 로봇 본체"
+COLOR = 3
+TILE = "V"
+CATEGORY = "ROBOT_SHELL_2"
+#DESCRIPTION = "A type of robot shell that takes its shape from certain light ground vehicles."
+DESCRIPTION = "소형 차량의 디자인을 본따 만든 로봇 본체."
+MOVE SLOTS = 4
+ACTION SLOTS = 2
+WEIGHT = 60000
+HIT POINTS = 30
+ARM = 3
+
+
+[ROBOT_SHELL]
+#NAME = "Medium Vehicle Robot Shell"
+NAME = "중형 차량 로봇 본체"
+COLOR = 11
+TILE = "V"
+CATEGORY = "ROBOT_SHELL_3"
+#DESCRIPTION = "A larger vehicle-form casing, designed for speed above all else."
+DESCRIPTION = "대형 차량의 디자인을 본따 만든 로봇 본체. 속도에 초점을 맞추어 디자인되었다."
+MOVE SLOTS = 4
+ACTION SLOTS = 3
+WEIGHT = 100000
+HIT POINTS = 80
+ARM = 5
+
+[ROBOT_SHELL]
+#NAME = "Small Spider Robot Shell"
+NAME = "소형 거미 로봇 본체"
+COLOR = 3
+TILE = "s"
+CATEGORY = "ROBOT_SHELL_3"
+#DESCRIPTION = "A high-mobility light robot shell. Makes a decent assault unit."
+DESCRIPTION = "기동성이 높은 소형 로봇 본체. 침투용 유닛으로 사용된다."
+MOVE SLOTS = 6
+ACTION SLOTS = 2
+WEIGHT = 200000
+HIT POINTS = 50
+ARM = 3
+
+[ROBOT_SHELL]
+#NAME = "Medium Spider Robot Shell"
+NAME = "중형 거미 로봇 본체"
+COLOR = 11
+TILE = "s"
+CATEGORY = "ROBOT_SHELL_4"
+MOVE SLOTS = 6
+ACTION SLOTS = 3
+WEIGHT = 350000
+HIT POINTS = 100
+ARM = 5
+
+[ROBOT_LEG]
+#NAME = "Metal Robot Leg"
+NAME = "철제 로봇 다리"
+#DESCRIPTION = "An articulated metal leg system for walker robots."
+DESCRIPTION = "보행 로봇에 사용되는 철제 다리."
+CATEGORY = "ROBOT_LEG_1"
+HIT POINTS = 20
+MOVE PWR = 20
+WEIGHT = 7500
+
+[ROBOT_LEG]
+#NAME = "Rubber Robot Wheel"
+NAME = "고무제 로봇 바퀴"
+#DESCRIPTION = "A powered wheel with a rubber tire, fast but easily punctured."
+DESCRIPTION = "고무 타이어가 달린 바퀴. 속도는 빠르지만 타이어가 터질 수 있다."
+CATEGORY = "ROBOT_LEG_1"
+HIT POINTS = 5
+MOVE PWR = 35
+WEIGHT = 2000
+
+[ROBOT_LEG]
+#NAME = "Metal Robot Caterpillar"
+NAME = "철제 로봇 카터필라"
+#DESCRIPTION = "A rugged tread system, popular in military robots. Slow but durable."
+DESCRIPTION = "군용 로봇에 주로 사용된다. 속도는 느리지만 내구성이 높다."
+CATEGORY = "ROBOT_LEG_1"
+HIT POINTS = 40
+MOVE PWR = 15
+WEIGHT = 2000
+
+# CPU PROGRAMMING
+# Program is a string of characters.
+# Program is executed lineary every time from the beginning, on every get_action for robot.
+# Executed is the first non-conditional activity
+# There are two types of instructions: conditional and non-conditional
+# Conditional instructions - when condition is fulfiled, CPU executes next instruction
+#  	      		     when condition is not fulfiled, CPU skip the next non-conditional instruction
+#			     (instruction pointer moves to the position after the next non-conditional)
+# Available instructions:
+#
+# Conditional
+# 0 - If I see the enemy
+# 1 - If I stand on position where you last saw enemy
+# 2 - If I stand on just by position where you last saw enemy
+# 3 - If I are >4 cells from last seen enemy position
+# 4 - If I are >8 cells from last seen enemy position
+# 5 - If my weapon has ammo
+# 6 - If I see my creator
+# 7 - Coin toss (50% chance)
+# 8 - If I can move
+# ! - Negate next condition
+#
+# Non-conditional
+# a - go to the last seen creator's position
+# b - attack enemy by range weapon
+# c - go to last seen enemy position
+# d - search for an enemy
+# e - go to nearest TRASH and utility it (treat trash an enemy) - for Utility Robot
+# f - activate grenades by activating and damaging it
+# g -
+# h -
+# i -
+# j - #not implemented - go to the last position of friend
+# k - #alarm
+# l - #run away from enemy
+# m - load ammo to the weapon
+# n - wait
+
+[PROCESSOR]
+#NAME = "Tutorial Target CPU"
+NAME = "튜토리얼 타겟 프로세서"
+CATEGORY = "ROBOT_CPU_UNIQUE"
+GROUP = ENEMY
+PROGRAM = "n"
+FREQ = 20
+QUALITY = 100
+HIT POINTS = 1
+WEIGHT = 100
+DESCRIPTION = "None"
+
+[PROCESSOR]
+#NAME = "Walking Bomb CPU"
+NAME = "보행 폭탄 프로세서"
+CATEGORY = "ROBOT_CPU_1"
+GROUP = ENEMY
+# Program
+# 1 - If I stand on position where you last saw enemy
+# 	d - search for an enemy
+# 0 - If I see the enemy
+# 	2 - If I stand on just by position where you last saw enemy
+# 		f - activate grenades by activating and damaging it
+# c - go to last seen enemy position
+
+PROGRAM = "1d02fc"
+FREQ = 35
+QUALITY = 35
+HIT POINTS = 10
+WEIGHT = 100
+DESCRIPTION = "A CPU module with the most rudimentary programming: to move towards sighted enemies and blow up if equipped with grenad
+s (also known as the Kamikaze program)."
+
+[PROCESSOR]
+#NAME = "ED710 CPU"
+NAME = "ED710 CPU"
+CATEGORY = "ROBOT_CPU_1"
+GROUP = ENEMY
+# Program
+# !6 - If I DONT see my creator
+# 	a - go to the last seen creator's position
+# !5 - If my weapon DOESNT have ammo
+# 	m - load ammo to the weapon
+# 0 - If I see the enemy
+# 	3 - If I are >4 cells from last seen enemy position
+# 		7 - Coin toss (50% chance)
+# 			7 - Coin toss (50% chance)
+# 				c - go to last seen enemy position
+# 0 - If I see the enemy
+# 	3 - If I are >4 cells from last seen enemy position
+# 		7 - Coin toss (50% chance)
+# 			c - go to last seen enemy position
+# 0 - If I see the enemy
+# 	!5 - If my weapon DOESNT have ammo
+# 		c - go to last seen enemy position
+# 0 - If I see the enemy
+# 	5 - If my weapon has ammo
+# 		b - attack enemy by range weapon
+# !0 - If I DONT see the enemy
+# 	1 - If I stand on position where you last saw enemy
+# 		7 - Coin toss (50% chance)
+# 			d - search for an enemy
+# !0 - If I DONT see the enemy
+# 	c - go to last seen enemy position
+
+PROGRAM = "!6a!5m0377c047c0!5c05b!017d!0c"
+FREQ = 35
+QUALITY = 60
+HIT POINTS = 10
+#DESCRIPTION = "An advanced combat CPU module, it will seek out and intelligently destroy enemies with ranged weapons."
+DESCRIPTION = "고급 CPU 모듈이다. 적을 탐색하여 원거리 무기로 공격한다."
+
+[PROCESSOR]
+#NAME = "SentryGun CPU"
+NAME = "센트리건 프로세서"
+CATEGORY = "ROBOT_CPU_1"
+GROUP = ENEMY
+# Program
+# ! - negacja
+# 	5 - Jezeli bron ma amunicje
+# 		m - zaladuj amunicje do broni (z pierwszego slotu, gdzie amunicja jest)
+# 5 - Jezeli bron ma amunicje
+# 	0 - gdy widzisz wroga
+# 		3 - Jezeli stoisz >4 pola od gdzie ostatni raz widziales wroga
+# 			7 - 50% szansy
+# 				n - czekaj
+# 5 - Jezeli bron ma amunicje
+# 	0 - gdy widzisz wroga
+# 		4 - Jezeli stoisz >8 pola od gdzie ostatni raz widziales wroga
+# 			7 - 50% szansy
+# 				n - czekaj
+# 5 - Jezeli bron ma amunicje
+# 	0 - gdy widzisz wroga
+# 		b - atakuj wroga na odleglosc
+PROGRAM = "!5m5037n5047n50b"
+FREQ = 10
+QUALITY = 40
+HIT POINTS = 10
+WEIGHT = 100
+
+[PROCESSOR]
+#NAME = "BunkerGun CPU"
+NAME = "벙커건 프로세서"
+CATEGORY = "ROBOT_CPU_UNIQUE"
+GROUP = ENEMY
+# Program
+# ! - negacja
+# 	5 - Jezeli bron ma amunicje
+# 		m - zaladuj amunicje do broni (z pierwszego slotu, gdzie amunicja jest)
+# 5 - Jezeli bron ma amunicje
+# 	0 - gdy widzisz wroga
+# 		b - atakuj wroga na odleglosc
+PROGRAM = "!5m50b"
+FREQ = 35
+QUALITY = 100
+HIT POINTS = 50
+WEIGHT = 2000
+#DESCRIPTION = "The most advanced sentry robot CPU, optimized for near-instant acquisition of targets."
+DESCRIPTION = "센트리봇 CPU 중 가장 발달된 것이다. 목표물에 대한 순간 포착 능력이 높다."
+
+[PROCESSOR]
+#NAME = "Simple Seeker CPU"
+NAME = "단순한 탐색 프로세서"
+CATEGORY = "ROBOT_CPU_1"
+GROUP = ENEMY
+# Program
+# 6 - Jezeli widzisz stworce
+# 	!0 - gdy nie widzisz wroga
+#		7 - 50% szansy
+#			7 - 50% szansy
+#				d - poszukuj wroga
+# 6 - Jezeli widzisz stworce
+# 	!0 - gdy nie widzisz wroga
+#		7 - 50% szansy
+#			a - idz do ostatniej pozycji stworcy
+# !6 - Jezeli nie widzisz stworcy
+# 	a - idz do ostatniej pozycji stworcy
+# 1 - Jezeli stoisz tam, gdzie ostatni raz widziales wroga
+#	d - poszukuj wroga
+# c - idz w kierunku, gdzie ostatni raz widziales wroga
+PROGRAM = "6!077d6!07a!6a1dc"
+FREQ = 45
+QUALITY = 40
+HIT POINTS = 10
+WEIGHT = 100
+#DESCRIPTION = "A multi-purpose CPU module. Will identify specified classes of target, close in and activate onboard equipment." 
+DESCRIPTION = "다목적 CPU 모듈. 목표물의 신원을 분석한 후, 목표에 접근하여 장착된 장비를 작동한다." 
+
+[COPYOF "단순한 탐색 프로세서"]
+#NAME = "Weak Simple Seeker CPU"
+NAME = "허술한 탐색 프로세서"
+QUALITY = 30
+#DESCRIPTION = "A multi-purpose CPU module. Will identify specified classes of target, close in and activate onboard equipment. This is an old model." 
+DESCRIPTION = "다목적 CPU 모듈. 목표물의 신원을 분석한 후, 목표에 접근하여 장착된 장비를 작동한다. 구형 모델이다." 
+
+[PROCESSOR]
+#NAME = "Utility Bot CPU"
+NAME = "유틸리티봇 프로세서"
+CATEGORY = "ROBOT_CPU_1"
+GROUP = NEUTRAL
+# Program
+# !6 - Jezeli nie widzisz stworcy
+# 	a - idz do ostatniej pozycji stworcy
+# e - Idz do TRASHia i utylizuj go (dla Utility Robot) - TRASH to wrog
+# 1 - Jezeli stoisz tam, gdzie ostatni raz widziales wroga
+# 	d - poszukuj wroga
+
+PROGRAM = "!6ae1d"
+FREQ = 35
+QUALITY = 35
+HIT POINTS = 10
+WEIGHT = 100
+#DESCRIPTION = "One of the dumber CPU modules, all this one can do is look for garbage and use whatever equipment it has on it."
+DESCRIPTION = "멍청한 CPU 모듈이다. 그저 주변의 쓰레기를 치우는 기능만 있는데, 쓰레기처럼 보이면 그게 무슨 장비이건 그냥 소각해 버린다."
+
+
+
+
+#przedmiot zostawiany przez maddoctora
+[TRASH]
+NAME = "Genetic Machine Card"
+NAME = "유전자 조작기 카드"
+TILE = "-"
+#DESCRIPTION = "A small chip card."
+DESCRIPTION = "작은 칩 카드."
+COLOR = 15
+CATEGORY = "ITEM_UNIQUE"
+WEIGHT = 100
+HIT POINTS = 5
+PURPOSE = GENETIC_MACHINE_CARD
+

@@ -1,0 +1,369 @@
+# UWAGA: Kazde podkreslenie w pliku zostanie zamienione na spacje
+#
+# Przy drzwiach - open mozna na tych, co maja (closed),
+# zmienia wtedy w teren z (close) i przepisuje cechy
+
+[TERRAIN]
+#NAME = "Floor"
+NAME = "¹Ù´Ú"
+TILE = "."
+COLOR = 7
+blockLOS = false
+blockMove = false
+hit_points = -1
+
+[TERRAIN]
+#NAME = "White Floor"
+NAME = "ÇÏ¾á ¹Ù´Ú"
+TILE = "."
+COLOR = 15
+blockLOS = false
+blockMove = false
+hit_points = -1
+
+
+[TERRAIN]
+#NAME = "Corridor"
+NAME = "º¹µµ"
+TILE = "."
+COLOR = 1
+blockLOS = false
+blockMove = false
+hit_points = -1
+
+
+[TERRAIN]
+#NAME = "Bloody Floor"
+NAME = "ÇÇ ¹¯Àº ¹Ù´Ú"
+TILE = "."
+COLOR = 4
+blockLOS = false
+blockMove = false
+hit_points = -1
+
+[TERRAIN]
+#NAME = "Building Wall"
+NAME = "°Ç¹° º®"
+TILE = "#"
+COLOR = 7
+blockLOS = true
+blockMove = true
+hit_points = 1000
+DESTROYED = "¹Ù´Ú"
+
+[TERRAIN]
+#NAME = "Wares"
+NAME = "È­¹° ´õ¹Ì"
+TILE = "#"
+COLOR = 7
+blockLOS = true
+blockMove = true
+hit_points = 20
+DESTROYED = "¹Ù´Ú"
+
+[TERRAIN]
+#NAME = "Boxes"
+NAME = "»óÀÚ ´õ¹Ì"
+TILE = "#"
+COLOR = 15
+blockLOS = false
+blockMove = true
+hit_points = 5
+DESTROYED = "¹Ù´Ú"
+
+
+[TERRAIN]
+#NAME = "Building Door (closed)"
+NAME = "°Ç¹° ¹® (´ÝÈû)"
+TILE = "+"
+COLOR = 6
+blockLOS = true
+blockMove = true
+hit_points = 20
+opened = false
+DESTROYED = "¹Ù´Ú"
+
+[TERRAIN]
+#NAME = "Building Door (opened)"
+NAME = "°Ç¹° ¹® (¿­¸²)"
+TILE = "/"
+COLOR = 6
+blockLOS = false
+blockMove = false
+hit_points = 20
+opened = true
+DESTROYED = "¹Ù´Ú"
+
+[TERRAIN]
+#NAME = "Dome"
+NAME = "µ¼"
+TILE = "#"
+COLOR = 15
+blockLOS = true
+blockMove = true
+hit_points = -1
+
+[TERRAIN]
+#NAME = "Metal Wall"
+NAME = "°­Ã¶ º®"
+TILE = "#"
+COLOR = 9
+blockLOS = true
+blockMove = true
+hit_points = 1000
+DESTROYED = "¹Ù´Ú"
+#DESTROYED_TO_ITEM = "Metal Rubbish"
+
+[TERRAIN]
+#NAME = "Strange Metal Wall"
+NAME = "±â¹¦ÇÑ °­Ã¶ º®"
+TILE = "#"
+COLOR = 9
+blockLOS = false
+blockMove = true
+hit_points = 1000
+DESTROYED = "¹Ù´Ú"
+#DESTROYED_TO_ITEM = "Metal Rubbish"
+
+
+[TERRAIN]
+#NAME = "Plastic Wall"
+NAME = "ÇÃ¶ó½ºÆ½ º®"
+TILE = "#"
+COLOR = 15
+blockLOS = true
+blockMove = true
+hit_points = 1000
+DESTROYED = "¹Ù´Ú"
+
+
+[TERRAIN]
+#NAME = "SpaceShip Wall"
+NAME = "¿ìÁÖ¼± º®"
+TILE = "#"
+COLOR = 3
+blockLOS = true
+blockMove = true
+hit_points = -1
+
+[TERRAIN]
+#NAME = "Rescue Capsule"
+NAME = "±¸¸í Ä¸½¶"
+TILE = "#"
+COLOR = 5
+blockLOS = true
+blockMove = true
+
+hit_points = -1
+
+[TERRAIN]
+#NAME = "Landing Platform"
+NAME = "ÀÌÂø·ú ÇÃ·§Æû"
+TILE = "."
+COLOR = 15
+blockLOS = false
+blockMove = false
+hit_points = -1
+
+[TERRAIN]
+#NAME = "Stone Wall"
+NAME = "µ¹ º®"
+TILE = "#"
+COLOR = 7
+blockLOS = true
+blockMove = true
+hit_points = 500
+DESTROYED = "¹Ù´Ú"
+
+[TERRAIN]
+#NAME = "Bunker Wall"
+NAME = "¹æ°øÈ£ º®"
+TILE = "?
+COLOR = 7
+blockLOS = true
+blockMove = true
+hit_points = 1500
+DESTROYED = "¹Ù´Ú"
+
+[TERRAIN]
+#NAME = "Shooting Window"
+NAME = "»ç°Ý¿ë Ã¢"
+TILE = "-"
+COLOR = 7
+blockLOS = false
+blockMove = true
+hit_points = 20
+DESTROYED = "¹Ù´Ú"
+
+[TERRAIN]
+#NAME = "Plastic Door (closed)"
+NAME = "ÇÃ¶ó½ºÆ½ ¹® (´ÝÈû)"
+TILE = "+"
+COLOR = 15
+blockLOS = false
+blockMove = true
+hit_points = 50
+opened = false
+DESTROYED = "º¹µµ"
+
+[TERRAIN]
+#NAME = "Plastic Door (opened)"
+NAME = "ÇÃ¶ó½ºÆ½ ¹® (¿­¸²)"
+TILE = "/"
+COLOR = 15
+blockLOS = false
+blockMove = false
+hit_points = 50
+opened = true
+DESTROYED = "º¹µµ"
+
+[TERRAIN]
+#NAME = "Bunker Door"
+NAME = "¹æ°øÈ£ ¹®"
+TILE = "-"
+COLOR = 3
+blockLOS = true
+blockMove = true
+hit_points = 150
+opened = false
+DESTROYED = "¹Ù´Ú"
+
+
+[TERRAIN]
+#NAME = "Metal Door (closed)"
+NAME = "°­Ã¶ ¹® (´ÝÈû)"
+TILE = "+"
+COLOR = 3
+blockLOS = true
+blockMove = true
+hit_points = 50
+opened = false
+DESTROYED = "¹Ù´Ú"
+
+[TERRAIN]
+#NAME = "Metal Door (opened)"
+NAME = "°­Ã¶ ¹® (¿­¸²)"
+TILE = "/"
+COLOR = 3
+blockLOS = false
+blockMove = false
+hit_points = 50
+opened = true
+DESTROYED = "¹Ù´Ú"
+
+[TERRAIN]
+#NAME = "Drawing Door (closed)"
+NAME = "ÀÚµ¿¹® (´ÝÈû)"
+TILE = "+"
+COLOR = 9
+blockLOS = true
+blockMove = true
+hit_points = 50
+opened = false
+DESTROYED = "¹Ù´Ú"
+
+
+[TERRAIN]
+#NAME = "Drawing Door (opened)"
+NAME = "ÀÚµ¿¹® (¿­¸²)"
+TILE = "/"
+COLOR = 9
+blockLOS = false
+blockMove = false
+hit_points = 50
+opened = true
+DESTROYED = "¹Ù´Ú"
+
+
+[TERRAIN]
+#NAME = "Glass Window"
+NAME = "À¯¸® Ã¢"
+TILE = "+"
+COLOR = 15
+blockLOS = false
+blockMove = true
+hit_points = 3
+
+[TERRAIN]
+#NAME = "Plastic Window"
+NAME = "ÇÃ¶ó½ºÆ½ Ã¢"
+TILE = "+"
+COLOR = 15
+blockLOS = false
+blockMove = true
+hit_points = 20
+
+[TERRAIN]
+#NAME = "Stairs (up)"
+NAME = "À§·Î ÅëÇÏ´Â °è´Ü"
+TILE = "<"
+COLOR = 15
+blockLOS = true
+blockMove = false
+hit_points = -1
+
+[TERRAIN]
+#NAME = "Stairs (down)"
+NAME = "¾Æ·¡·Î ÅëÇÏ´Â °è´Ü"
+TILE = ">"
+COLOR = 15
+blockLOS = false
+blockMove = false
+hit_points = -1
+
+[TERRAIN]
+#NAME = "Shattered Enterance"
+NAME = "ºÎ¼­Áø ÀÔ±¸"
+TILE = ">"
+COLOR = 7
+blockLOS = false
+blockMove = false
+hit_points = -1
+
+[TERRAIN]
+#NAME = "Space"
+NAME = "¿ìÁÖ"
+TILE = " "
+COLOR = 0
+blockLOS = false
+blockMove = true
+hit_points = -1
+
+[TERRAIN]
+#NAME = "Far Space"
+NAME = "¸Õ ¿ìÁÖ"
+TILE = " "
+COLOR = 0
+blockLOS = true
+blockMove = true
+hit_points = -1
+
+[TERRAIN]
+#NAME = "Closed Capsule Door"
+NAME = "Ä¸½¶ ¹® (´ÝÈû)"
+TILE = "-"
+COLOR = 14
+blockLOS = false
+blockMove = true
+hit_points = -1
+
+
+[TERRAIN]
+#NAME = "Collapsed Ceiling"
+NAME = "¹«³ÊÁø ÃµÀå"
+TILE = "#"
+COLOR = 8
+blockLOS = true
+blockMove = true
+hit_points = 20
+DESTROYED = "¹Ù´Ú"
+
+[TERRAIN]
+#NAME = "Cantilever"
+NAME = "ÁöÁö´ë"
+TILE = "."
+COLOR = 6
+blockLOS = false
+blockMove = false
+hit_points = 20
+DESTROYED = "¹«³ÊÁø ÃµÀå"

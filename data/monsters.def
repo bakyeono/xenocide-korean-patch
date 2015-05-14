@@ -1,0 +1,1218 @@
+# UWAGA: Kazde podkreslenie w pliku zostanie zamienione na spacje
+#
+
+[INTELLIGENT]
+#NAME = "Human"
+NAME = "Human"
+CATEGORY = "MONSTER_UNIQUE"
+#DESCRIPTION = "A typical human male."
+DESCRIPTION = "전형적인 인간 남자."
+TILE = "H"
+COLOR = 6
+SIZE = 100
+WEIGHT = 70000
+HIT POINTS = 15
+
+STRENGTH = 10
+DEXTERITY = 8
+SPEED = 20
+ENDURANCE = 10
+INTELLIGENCE = 10
+METABOLISM = 20
+
+UNARMED = "맨손"
+SKIN = "맨몸"
+
+skill = SMALL GUNS 20
+skill = ENERGY WEAPONS 20
+skill = MELEE WEAPONS 20
+skill = UNARMED 20
+skill = THROWING 20
+skill = MEDICINE 20
+skill = DODGING 10
+
+SOUND PAIN = "data/sounds/monsters/human/pain.wav"
+SOUND DYING = "data/sounds/monsters/human/die.wav"
+
+[COPYOF "Human"]
+#NAME = "Player Combat"
+NAME = "Player Combat"
+TILE = "@"
+COLOR = 14
+
+skill = SMALL GUNS 30
+skill = MELEE WEAPONS 45
+skill = UNARMED 30
+skill = THROWING 30
+
+INVENTORY = 1 "가죽 자켓" AS_ARMOR
+INVENTORY = 1 "8mm 피스톨" AS_WEAPON
+INVENTORY = 1 "식칼" AS_READY
+INVENTORY = 36 "8mm 피스톨탄"
+INVENTORY = 1 "신경 가속 알약"
+
+SOUND PAIN = "data/sounds/monsters/human/pain.wav"
+SOUND DYING = "data/sounds/monsters/human/die.wav"
+
+[COPYOF "Human"]
+#NAME = "Player Medic"
+NAME = "Player Medic"
+TILE = "@"
+COLOR = 14
+
+skill = MEDICINE 60
+metabolism = 40
+
+INVENTORY = 1 "나노테크 수술 칼" AS_WEAPON
+INVENTORY = 1 "연구복" AS_ARMOR
+INVENTORY = 1 "못 피스톨" AS_READY
+INVENTORY = 2 "나노테크 치료 알약"
+INVENTORY = 2 "신경 가속 알약"
+INVENTORY = 2 "헐크 알약"
+INVENTORY = 20 "못"
+INVENTORY = 1 "나노테크 배터리"
+CATEGORY ITEM = "PILLS_POPULAR"
+CATEGORY ITEM = "PILLS_POPULAR"
+CATEGORY ITEM = "PILLS_POPULAR"
+
+SOUND PAIN = "data/sounds/monsters/human/pain.wav"
+SOUND DYING = "data/sounds/monsters/human/die.wav"
+
+[COPYOF "Human"]
+#NAME = "Player Scientist"
+NAME = "Player Scientist"
+TILE = "@"
+COLOR = 14
+
+skill = ALIEN SCIENCE 60
+skill = PROGRAMMING 60
+skill = MELEE WEAPONS 30
+
+INVENTORY = 1 "소형 레이저 피스톨" AS_WEAPON
+INVENTORY = 1 "식칼" AS_READY
+INVENTORY = 1 "연구복" AS_ARMOR
+INVENTORY = 1 "나노테크 치료 알약"
+INVENTORY = 1 "개인용 방어막"
+INVENTORY = 1 "소형 나노테크 배터리"
+CATEGORY ITEM = "GRENADE_NORMAL_1"
+
+SOUND PAIN = "data/sounds/monsters/human/pain.wav"
+SOUND DYING = "data/sounds/monsters/human/die.wav"
+
+[COPYOF "Human"]
+#NAME = "Player Mechanic"
+NAME = "Player Mechanic"
+TILE = "@"
+COLOR = 14
+
+skill = MECHANIC 50
+skill = PROGRAMMING 40
+
+INVENTORY = 1 "망치" AS_WEAPON
+INVENTORY = 1 "작업복" AS_ARMOR
+INVENTORY = "렌치"
+INVENTORY = "자동 수리 도구"
+INVENTORY = "기본 프로그램 설계기"
+INVENTORY = "유틸리티봇 본체"
+INVENTORY = "센트리건 프로세서"
+INVENTORY = "허술한 탐색 프로세서"
+INVENTORY = "보행 폭탄 프로세서"
+INVENTORY = "고무제 로봇 바퀴"
+INVENTORY = "고무제 로봇 바퀴"
+INVENTORY = "철제 로봇 카터필라"
+
+SOUND PAIN = "data/sounds/monsters/human/pain.wav"
+SOUND DYING = "data/sounds/monsters/human/die.wav"
+
+[COPYOF "Human"]
+#NAME = "Player TEST"
+NAME = "Player TEST"
+TILE = "@"
+COLOR = 14
+
+skill = SMALL GUNS 30
+skill = MELEE WEAPONS 80
+skill = UNARMED 30
+skill = THROWING 30
+
+HIT POINTS = 30
+metabolism = 30
+strength = 15
+
+#INVENTORY = 1 "방호복" AS_ARMOR
+INVENTORY = 1 "파워 아머" AS_ARMOR
+INVENTORY = 1 "전기톱" AS_WEAPON
+INVENTORY = 1 "자가발전 응축 배터리"
+INVENTORY = 2 "신경 가속 알약"
+INVENTORY = 2 "해독제"
+INVENTORY = 1 "헐크 알약"
+INVENTORY = 3 "가연성 수류탄"
+INVENTORY = 3 "독 가스 수류탄"
+INVENTORY = 3 "기절 가스 수류탄"
+INVENTORY = 3 "마비 가스 수류탄"
+
+SOUND PAIN = "data/sounds/monsters/human/pain.wav"
+SOUND DYING = "data/sounds/monsters/human/die.wav"
+
+[COPYOF "Human"]
+#NAME = "Player Tutorial"
+NAME = "Player Tutorial"
+TILE = "@"
+COLOR = 14
+
+skill = SMALL GUNS 100
+skill = MELEE WEAPONS 100
+skill = UNARMED 100
+skill = THROWING 100
+skill = MECHANIC 100
+
+INVENTORY = "도끼"
+
+HIT POINTS = 100
+metabolism = 30
+strength = 15
+
+[COPYOF "Human"]
+#NAME = "Crazy Citizen"
+NAME = "미친 시민"
+CATEGORY = "MONSTER_POOR_HUMAN"
+GROUP = CRAZY
+#DESCRIPTION = "This man is, or was, a citizen of the city in which you now stand. Though his body may now be present, his mind seems to be completely vacant. You gaze into his eyes, and you see it there, the madness, this man is mad, and he lost his sanity long ago. You get the feeling that it would be wise to keep your distance from him."
+DESCRIPTION = "이 남자는 이곳의 시민이었다. 그의 육체는 이곳에 있지만 영혼은 텅 빈 것처럼 보인다. 광기가 번뜩이는 그의 눈을 통해 이미 그가 오래전에 미쳤다는 것을 알 수 있다. 그에게 가까이 다가가지 않는 것이 좋을 듯하다."
+INVENTORY = 1 "가죽 자켓" AS_ARMOR
+experience = 10
+
+SOUND PAIN = "data/sounds/monsters/human/pain.wav"
+SOUND DYING = "data/sounds/monsters/human/die.wav"
+
+skill = MELEE WEAPONS 50
+skill = UNARMED 50
+
+[COPYOF "Human"]
+#NAME = "Crazy Scientist"
+NAME = "미친 과학자"
+COLOR = 15
+CATEGORY = "MONSTER_CRAZY_HUMAN"
+GROUP = CRAZY
+#DESCRIPTION = "This man was once a brilliant scientist, but now he is a mindless shell of his former self, driven to madness by the horrors he has witnessed. He shambles along, mumbling and muttering under his breath, and sometime cackling with delight at sights only he can see. As you watch him hopping about you get the feeling that he is dangerous, and should be avoided."
+DESCRIPTION = "이 남자는 한 때 명석한 과학자였으나 그가 목격한 끔찍한 일들 때문에 미쳐서 지금은 영혼 없는 껍데기만 남았다. 그는 거친 숨을 몰아쉬며 알 수 없는 헛소리를 연신 지껄여대고 있으며 자기만 볼 수 있는 환상에 신이 나 껑충껑충 뛰곤 한다. 아무래도 이 남자에게 가까이 다가가는 건 위험할 것 같다."
+
+intelligence = 25
+
+INVENTORY = 1 "연구복" AS_ARMOR
+CATEGORY ITEM = "PILLS_POPULAR"
+CATEGORY ITEM = "PILLS_POPULAR"
+CATEGORY ITEM = "PILLS_POPULAR"
+experience = 50
+
+SOUND PAIN = "data/sounds/monsters/human/pain.wav"
+SOUND DYING = "data/sounds/monsters/human/die.wav"
+
+[COPYOF "Human"]
+#NAME = "Crazy Technician"
+NAME = "미친 기술자"
+COLOR = 7
+GROUP = CRAZY
+CATEGORY = "MONSTER_CRAZY_HUMAN"
+#DESCRIPTION = "Fear filled, wild eyes glisten from out the darkness, belonging to a man that has lost all capacity for rational thought. The terrors he has seen have shattered his mind, causing him to abandon his work in favour of a new job; killing everyone and everything that moves, because they all pose a threat to him in his mind. He sees you as a threat as well, and will not hesitate to butcher your body."
+DESCRIPTION = "공포에 질린 채 어둠 속에서 짐승 같은 눈을 번뜩이는 이 남자는 이미 인간으로서의 이성적인 사고를 모두 상실했다. 그가 목격한 끔찍한 일들 때문에 그의 정신은 산산조각났다. 그래서 그는 원래 하던 일을 버리고 새로운 일을 하게 되었다. 그 일은 움직이는 것은 뭐든지 죽이는 것이다. 그의 눈에는 모든 생물이 적으로 보이고 있다. 그는 나 또한 위협적인 존재로 느끼고 있으며 망설임없이 나를 죽이려 달려들 것 같다."
+
+skill = MELEE WEAPONS 30
+INVENTORY = 1 "작업복" AS_ARMOR
+CATEGORY ITEM = "WEAPON_H2H_IMPROVISED_1"
+experience = 50
+
+SOUND PAIN = "data/sounds/monsters/human/pain.wav"
+SOUND DYING = "data/sounds/monsters/human/die.wav"
+
+[COPYOF "Human"]
+#NAME = "Soldier"
+NAME = "병사"
+CATEGORY = "MONSTER_HUMAN_MILITARY_1"
+COLOR = 2
+#DESCRIPTION = "This is a human soldier, outfitted in heavy armour that bears the signs of the SpaceTroopers. You see his eyes, the are strange, inhuman, and they burn with a fiery hatred that only death can extinguish."
+DESCRIPTION = "이 사람은 우주군이 입는 무거운 갑옷을 걸친 군인이다. 그런데 그의 눈은 기묘하고 인간의 눈이 아닌 것 같다. 그의 눈에는 증오의 불길이 타오르고 있으며 그 증오는 그가 죽기 전까지는 사라지지 않을 것 같다."
+WEIGHT = 80000
+HIT POINTS = 25
+
+strength = 14
+dexterity = 10
+speed = 20
+
+skill = SMALL GUNS 50
+skill = ENERGY WEAPONS 50
+skill = MELEE WEAPONS 50
+skill = UNARMED 50
+skill = THROWING 50
+skill = MEDICINE 50
+skill = DODGING 30
+
+INVENTORY = 1 "8mm 피스톨" AS_WEAPON
+INVENTORY = 1 "케블라 조끼" AS_ARMOR
+INVENTORY = 20 "8mm 피스톨탄" 
+INVENTORY = 3 "수류탄"
+INVENTORY = 2 "연막 수류탄"
+INVENTORY = 1 "가연성 수류탄"
+INVENTORY = 1 "기절 수류탄"
+INVENTORY = 1 "소형 에너지 방어막"
+INVENTORY = 1 "에너지 방어막"
+INVENTORY = 1 "대형 에너지 방어막"
+INVENTORY = 3 "개인용 방어막"
+INVENTORY = 2 "자동감지 지뢰"
+INVENTORY = 2 "자동감지 가연성 지뢰"
+experience = 500
+
+SOUND PAIN = "data/sounds/monsters/human/pain.wav"
+SOUND DYING = "data/sounds/monsters/human/die.wav"
+
+[COPYOF "Human"]
+#NAME = "Crazy Miner"
+NAME = "미친 광부"
+CATEGORY = "MONSTER_MINES_1"
+GROUP = CRAZY
+COLOR = 1
+#DESCRIPTION = "The job of a miner is a dangerous thing, especially in the mines of Tartarus 3, where all manner of strange creatures run wild. Most people couldn't handle the stress of working under such conditions, and many of them would snap under the pressure. This is true of the man you are looking at. The nightmares that he had witnessed drove him over the brink of insanity. His eyes are cold and lifeless, yet he still lives, and he seeks the ruin of all around him, including you."
+DESCRIPTION = "광부로 사는 건 원래 위험한 일이지만 특히 온갖 생명체들이 날뛰는 타타루스 3호에서의 광부 일은 더욱 위험하다. 그런 작업환경을 버텨낼 수 있는 사람은 얼마 없다. 그런 점에서 이사람은 산전수전 다 겪은 사람이다. 하지만 그는 악몽같은 광경을 목도한 탓에 미쳐버렸다. 그의 눈은 차갑고 생기가 없다. 하지만 그는 아직 살아있으며 주변의 모든 것을 파괴며 돌아다니고 있다. 나 또한 그 파괴의 목표가 될 것 같다."
+WEIGHT = 80000
+HIT POINTS = 25
+
+strength = 14
+dexterity = 8
+speed = 20
+
+skill = MELEE WEAPONS 40
+skill = UNARMED 40
+skill = THROWING 30
+skill = DODGING 30
+
+CATEGORY ITEM = "WEAPON_H2H_IMPROVISED_2"
+INVENTORY = 1 "광업복" AS_ARMOR
+INVENTORY = 1 "광업용 배터리"
+experience = 300
+
+SOUND PAIN = "data/sounds/monsters/human/pain.wav"
+SOUND DYING = "data/sounds/monsters/human/die.wav"
+
+[ANIMAL]
+#NAME = "Claw Rat"
+NAME = "발톱 쥐"
+CATEGORY = "MONSTER_SPACE_SHIP_1"
+#DESCRIPTION = "You see before you a large, rat-like creature whose body is covered in a thick brown layer of crusty, matted fur. Its eyes are like glowing yellow orbs, bulging out of its head, while from its mouth pours a steady stream of slimy drool. You also notice that the claw rat happens to have a set of claws that, though small, are extremely sharp, perhaps sharp enough to cut through armour, but definitely sharp enough to cut through flesh..."
+DESCRIPTION = "이 거대하고 쥐처럼 생긴 생물은 딱딱하고 지저분한 갈색 털가죽으로 덮여 있다. 이 생물의 눈은 징그러운 누런 빛으로 빛나고 있으며 머리에서 불룩 튀어나와 있다. 입에서는 끈적거리는 침이 끝없이 흘러나오고 있다. 이 생물의 발에는 작지만 극도로 날카로운 발톱이 달려 있다. 인간의 피부는 물론이고 갑옷까지도 관통할 수 있을 것처럼 보인다..."
+TILE = "r"
+COLOR = 6
+SIZE = 30
+WEIGHT = 20000
+HIT POINTS = 5
+
+strength = 8
+dexterity = 8
+speed = 20
+endurance = 10
+intelligence = 5
+metabolism = 10
+
+experience = 25
+
+unarmed = "작은 발톱"
+skin = "작은 털가죽"
+
+skill = UNARMED 20
+
+SOUND PAIN = "data/sounds/monsters/rat/pain.wav"
+SOUND DYING = "data/sounds/monsters/rat/die.wav"
+
+[ANIMAL]
+#NAME = "Tutorial Monster"
+NAME = "튜토리얼 괴물"
+CATEGORY = "MONSTER_UNIQUE"
+#DESCRIPTION = "You see before you a large, rat-like creature whose body is covered in a thick brown layer of crusty, matted fur. Its eyes are like glowing yellow orbs, bulging out of its head, while from its mouth pours a steady stream of slimy drool. You also notice that the claw rat happens to have a set of claws that, though small, are extremely sharp, perhaps sharp enough to cut through armour, but definitely sharp enough to cut through flesh..."
+DESCRIPTION = "이 거대하고 쥐처럼 생긴 생물은 딱딱하고 지저분한 갈색 털가죽으로 덮여 있다. 이 생물의 눈은 징그러운 누런 빛으로 빛나고 있으며 머리에서 불룩 튀어나와 있다. 입에서는 끈적거리는 침이 끝없이 흘러나오고 있다. 이 생물의 발에는 작지만 극도로 날카로운 발톱이 달려 있다. 인간의 피부는 물론이고 갑옷까지도 관통할 수 있을 것처럼 보인다..."
+TILE = "r"
+COLOR = 6
+SIZE = 30
+WEIGHT = 20000
+HIT POINTS = 10
+
+strength = 0
+dexterity = 0
+speed = 15
+endurance = 10
+intelligence = 5
+metabolism = 10
+
+experience = 1
+
+unarmed = "작은 발톱"
+skin = "작은 털가죽"
+
+skill = UNARMED 0
+
+SOUND PAIN = "data/sounds/monsters/rat/pain.wav"
+SOUND DYING = "data/sounds/monsters/rat/die.wav"
+
+# definicja znajduje sie glownie w klasie, tutaj tylko dla mozliwosci zmian bez kompilacji kodu
+[MADDOCTOR]
+#NAME = "미친 박사"
+NAME = "미친 박사"
+CATEGORY = "MONSTER_UNIQUE"
+#DESCRIPTION = "This genetic lab was once home to a myriad of illegal experiments, all which have gone awry. You have witnessed with your own eyes the horrors that man may forge when he alters nature against the natural order. But all of the horrors you have witness prior to this moment pale in comparison to the terror that now stands before you. This genetic lab was once overseen by a doctor, a mad man who believed himself to be equal to God. Yet he was not omnipotent, and when his own creations turned on him and left him for dead, he was forced to turn to his own twisted science to save himself. In order to save himself he injected into his bloodstream a myriad of mutagenic chemicals, each different chemical containing a sampling of alien DNA. Now he stands before you, no longer recognizable as a man. The DNAs of his experiments have merged with his own, transforming him into a thing that is neither man nor beast. High above you he towers, easily ten feet tall, covered from the waist up by a thin layer of matted, putrid, twisted fur. His arms, thick as tree trunks, each sport a multitude of fingers, while at the end of each finger is a sword-like claw. Below the waist he ceases to resemble a man in the least, his belly terminating in a set of chitinous, spider-esque legs. From out his back protrudes what would appear to be an exoskeletal tail, at the end of which rests a large barb that looks as if it was stripped right off of some immense devil-scorpion. All these things are terrifying, but the feature of the doctor that is most hideous of all is not one of his many bizarre appendages. No, the thing about him that strikes you with greatest dread is his face. Though set into a mass of hideous, inhuman flesh, the doctor's face is very human. It has all the features that one would expect to find in an old, grandfatherly man, but this pleasant face is twisted into a sick grin, and its cold grey eyes burn with an empty and hollow fire. Yes, this was once a man, but regardless of who this man once was, you can see that what he is now, and you know this; he gazed upon you with intent, the intent to kill. The fear swells up inside of your chest as he draws nearer, and you know that you have to make a choice. You can either fight to rid the cosmos of this thing, or you can flee to save your own life. With every passing moment the doctor draws nearer, and so you have to make a choice, and fast. What will you do?"
+DESCRIPTION = "이 유전학 연구동은 금지된 실험이 수없이 많이 진행되었던 곳이다. 나는 이 박사가 자연의 질서를 거역하며 만들어 낸 끔찍한 결과물들을 보았다. 하지만 지금 내 앞에 서 있는 이 자의 처참한 모습에 비한다면 지금껏 내가 보았던 괴물들은 겨우 애완동물 수준이다. 유전학 연구동을 감독했던 이 미친 박사는 스스로를 신으로 생각했던 것 같다. 그가 아직 막강한 힘을 갖지 못했을 때, 자신이 창조한 생명체들이 자기를 배신하자 그는 자신의 목숨을 구하기 위해 왜곡된 기술을 자기 자신에게 적용했다. 그는 스스로에게 외계 생물의 유전자 변형체를 너무 많이 투여했다. 그는 지금 더이상 인간의 모습을 하고 있지 않다. 그가 자기 자신에게 적용한 DNA 실험은 그를 사람도 짐승도 아닌 괴물로 만들어 버렸다. 그의 신장은 3미터가 훌쩍 넘는다. 그리고 머리부터 허리까지 더럽고 지저분한 털이 휘감겨있다. 그의 팔은 나무 밑둥처럼 두꺼운데 손가락 하나하나에도 변이가 일어나 손톱이 칼날 같은 물질로 되어 있다. 허리 아래로는 완전히 인간이기를 포기한 것처럼 보인다. 그의 배는 갑각류의 껍질로 덮여 있고 거미같은 기괴한 다리를 달고 있다. 그 뒤에는 뼈만 앙상한 꼬리 같은 것이 툭 튀어나와 있고 그 끝에는 끔찍한 전갈에서 뜯어낸 듯한 커다란 가시가 달려 있다. 박사가 만들어낸 괴물들을 모두 모아 놓은 듯한 이 온갖 특징들은 끔찍하지만, 그보다 더 흉측한 것이 있다. 그의 가장 사악하고 흉측한 모습은 그의 얼굴에 있다. 박사의 신체의 다른 부분은 모두 기괴하기 짝이 없지만 얼굴만은 매우 인간적이다. 이 박사의 얼굴에는 사람들이 보통 평범한 할아버지를 떠올릴 때 기대할 수 있는 모든 것이 다 갖춰져 있다. 그러나 이 점잖은 얼굴은 괴상한 미소로 왜곡되어 있으며 차가운 회색 눈동자는 야수처럼 불타고 있다. 그렇다. 이 자는 한 때 인간이었다. 그러나 그거 어떤 인간이었든지, 지금 내가 보고 있는 것은 괴물이다. 그는 나를 바라보고 있다. 나를 죽이려하고 있다. 그가 다가오는동안 내 마음 속의 공포가 점점 커지고 있다. 나는 선택해야 한다. 맞서 싸워서 이 끔찍한 혼합물을 제거할 것인가, 아니면 살기 위해 도망칠 것인가? 그가 다가오는 동안 나는 어서 선택해야만 한다. 어떻게 할 것인가?
+COLOR = 10
+SIZE = 1000
+WEIGHT = 200000
+HIT POINTS = 200
+
+strength = 15
+dexterity = 15
+speed = 35
+endurance = 10
+intelligence = 20
+metabolism = 100
+
+experience = 4000
+skill = UNARMED 70
+skill = MELEE WEAPONS 70
+skill = THROWING 90
+
+RESIST = Radioactive 100
+RESIST = Poison 100
+RESIST = Stun 100
+
+skin = "작은 털가죽"
+unarmed = "발톱 달린 팔"
+
+[ANIMAL]
+#NAME = "Rabid Prankster"
+NAME = "미친 프랭크스터"
+CATEGORY = "MONSTER_SPACE_SHIP_1"
+#DESCRIPTION = "Pranksters resemble small monkeys, though they only have the intelligence of your average dog. These creatures are usually kept as pets, though this one acts like it is wild. On closer inspection you see the reason for the creature's behaviour, it is foaming at the mouth, making this a rabid prankster."
+DESCRIPTION = "프랭크스터는 원숭이처럼 생긴 작은 동물이지만 지능은 개 수준밖에 안 된다. 이 생물은 원래 애완용으로 사육되는 경우가 많은데 지금 보고 있는 생물은 야생동물처럼 행동하고 있다. 자세히 살펴보면 그 이유를 알 것 같은데, 이 생물의 입에서는 거품이 끓어나오고 있어 아무래도 광견병에 걸린 것 같다."
+TILE = "m"
+COLOR = 6
+SIZE = 150
+WEIGHT = 20000
+HIT POINTS = 15
+
+strength = 8
+dexterity = 7
+skill = UNARMED 25
+speed = 20
+endurance = 3
+intelligence = 10
+metabolism = 10
+
+experience = 50
+
+unarmed = "작은 이빨"
+skin = "작은 털가죽"
+
+SOUND PAIN = "data/sounds/monsters/prankster/pain.wav"
+SOUND DYING = "data/sounds/monsters/prankster/die.wav"
+
+[ANIMAL]
+#NAME = "Starcrawler"
+NAME = "은하 지네"
+CATEGORY = "MONSTER_SPACE_SHIP_1"
+#DESCRIPTION = "Starcrawlers are large centipedes, commonly found on planets outside of the Solar System. Despite extensive research, scientists have yet to explain how this race became so wide spread throughout the galaxy."
+DESCRIPTION = "이 거대한 지네는 태양계 외부에서 주로 발견된다. 과학자들의 많은 조사에도 불구하고 여전히 어떻게 이 생물이 은하 전체에 널리 번성하게 되었는지는 밝혀지지 않았다."
+TILE = "w"
+COLOR = 9
+SIZE = 50
+WEIGHT = 10000
+HIT POINTS = 15
+
+strength = 15
+dexterity = 5
+speed = 15
+endurance = 15
+intelligence = 10
+metabolism = 10
+experience = 40
+skill = UNARMED 40
+
+unarmed = "작은 발톱"
+skin = "부드러운 피부"
+
+SOUND PAIN = "data/sounds/monsters/worm/pain.wav"
+SOUND DYING = "data/sounds/monsters/worm/die.wav"
+
+[ANIMAL]
+#NAME = "Splitter"
+NAME = "분열하는 괴물"
+CATEGORY = "MONSTER_MINES_2"
+#DESCRIPTION = "The splitter appears at first glance to be nothing more than a large glob of yellow mucous, but closer inspection would show that the creature is very much alive. It crawls about the floor, hunting after smaller organisms and absorbing them into it's membrane. You remember reading something about this creature once. Supposedly it functions very much like a giant once-celled amoeba, and, when terminally damaged, it is capable of diving itself into two smaller splitters by using the nutrients in its cytoplasm to heal itself. Splitters can only be destroyed once they do not have enough nutrients left to split."
+DESCRIPTION = "이 괴물은 얼핏 봤을 때는 그저 큼지막한 노란색 점액 덩어리로 보이지만 자세히 살펴보면 살아있는 물질이라는 것을 알 수 있다. 이 괴물은 바닥을 기어다니며 작은 유기체를 흡수하고 성장한다. 어디서 이런 생물에 관해 읽은 기억이 난다. 이 생물은 아메바와 유사하며 위협을 받으면 세포질의 영양소를 이용해 스스로를 둘로 분열시킬 수 있다. 이 분열 괴물은 더이상 분열할 수 있을 영양소가 남지 않았을 때에서야 비로소 파괴될 것이다."
+SPECIAL FEATURE = SPLITTER
+TILE = "n"
+COLOR = 14
+SIZE = 100
+WEIGHT = 20000
+HIT POINTS = 25
+
+strength = 12
+dexterity = 8
+speed = 20
+skill = UNARMED 60
+endurance = 3
+intelligence = 10
+metabolism = 10
+experience = 200
+
+unarmed = "작은 이빨"
+skin = "부드러운 피부"
+
+SOUND PAIN = "data/sounds/monsters/splitter/pain.wav"
+SOUND DYING = "data/sounds/monsters/splitter/die.wav"
+
+[ANIMAL]
+#NAME = "Small Critter"
+NAME = "작은 크리터"
+CATEGORY = "MONSTER_SPACE_SHIP_1"
+#DESCRIPTION = "Critters appear to be harmless, furry, ball-like creatures, but upon closer inspection one would find that they are anything but harmless. With their rows upon rows of razor sharp teeth, and their glowing red eyes, they look like something out of a nightmare. They love the taste of raw, living flesh (especially human flesh), so there's always an open season for them. This critter is very young, and it hasn't begun to grow it's fur yet."
+DESCRIPTION = "이 털가죽으로 뒤덮인 공 처럼 생긴 생물은 별 위협이 되지 않는 것처럼 보인다. 하지만 자세히 조사해보면 분명히 위협적인 생물이라는 결론을 내리게 될 것이다. 촘촘히 박힌 날카로운 이빨과 번쩍거리는 시뻘건 눈을 보면 악몽 속에서 나온 괴물처럼 보인다. 크리터는 살점을 뜯어먹는 걸 좋아하는데, 특히 인간의 살점을 선호한다. 이 크리터는 아주 어려서 아직 털도 제대로 나지 않았다."
+
+TILE = "o"
+COLOR = 7
+SIZE = 100
+WEIGHT = 15000
+HIT POINTS = 12
+strength = 7
+dexterity = 8
+speed = 30
+endurance = 10
+intelligence = 10
+metabolism = 10
+
+experience = 60
+skill = UNARMED 40
+
+unarmed = "작은 이빨"
+skin = "부드러운 피부"
+
+SOUND PAIN = "data/sounds/monsters/critter/pain.ogg"
+SOUND DYING = "data/sounds/monsters/critter/die.ogg"
+
+[ANIMAL]
+#NAME = "Black Beetle"
+NAME = "시커먼 벌레"
+CATEGORY = "MONSTER_SPACE_SHIP_2"
+#DESCRIPTION = "Black Beetles are enormous insectoid organisms. Though they may move slow, their thick chitinous armour protects them from the attacks of most other life forms. Their armour, combined with their huge, razor-edged mandibles, makes them essentially an organic tank. You find it strange that this creature is here. They are usually found in dark caves on planets with low oxygen atmospheres, and not on space stations."
+DESCRIPTION = "이 시커먼 벌레는 거대한 곤충류 유기체다. 이 벌레는 천천히 움직이지만 딱딱한 껍데기로 뒤덮여 있어 다른 생물들의 공격을 대부분 막아낼 수 있다. 그 껍데기와 거대하고 날카로운 턱뼈는 이 생물을 살아있는 탱크로 만들었다. 그런데 이 생물이 이곳에 있는 것은 뭔가 이상하다. 이런 생물은 우주 정거장이 아니라, 주로 대기가 존재하는 행성의 어두운 동굴에서 발견되기 때문이다.
+TILE = "B"
+COLOR = 8
+SIZE = 200
+WEIGHT = 35000
+HIT POINTS = 25
+
+strength = 20
+dexterity = 7
+speed = 10
+endurance = 20
+intelligence = 10
+metabolism = 10
+
+experience = 120
+
+unarmed = "날카로운 이빨"
+skin = "갑각류 껍데기"
+
+skill = UNARMED 20
+
+SOUND PAIN = "data/sounds/monsters/beetle/pain.wav"
+SOUND DYING = "data/sounds/monsters/beetle/die.wav"
+
+[ANIMAL]
+#NAME = "Medium Critter"
+NAME = "크리터"
+CATEGORY = "MONSTER_SPACE_SHIP_2"
+#DESCRIPTION = "Critters appear to be harmless, furry, ball-like creatures, but upon closer inspection one would find that they are anything but harmless. With their rows upon rows of razor sharp teeth, and their glowing red eyes, they look like something out of a nightmare. They love the taste of raw, living flesh (especially human flesh), so there's always an open season for them. This critter is probably not that young, since it has begun to grow a small coat of fur."
+DESCRIPTION = "이 털가죽으로 뒤덮인 공 처럼 생긴 생물은 별 위협이 되지 않는 것처럼 보인다. 하지만 자세히 조사해보면 분명히 위협적인 생물이라는 결론을 내리게 될 것이다. 촘촘히 박힌 날카로운 이빨과 번쩍거리는 시뻘건 눈을 보면 악몽 속에서 나온 괴물처럼 보인다. 크리터는 살점을 뜯어먹는 걸 좋아하는데, 특히 인간의 살점을 선호한다. 이 크리터는 털로 뒤덮여 있는 다 큰 크리터이다."
+TILE = "o"
+COLOR = 6
+SIZE = 200
+WEIGHT = 30000
+HIT POINTS = 25
+skill = UNARMED 40
+
+strength = 8
+dexterity = 9
+speed = 30
+endurance = 10
+
+intelligence = 10
+metabolism = 10
+
+experience = 125
+
+unarmed = "작은 이빨"
+skin = "작은 털가죽"
+
+SOUND PAIN = "data/sounds/monsters/critter/pain.wav"
+SOUND DYING = "data/sounds/monsters/critter/die.wav"
+
+[ANIMAL]
+#NAME = "Stained Worm"
+NAME = "얼룩무늬 지렁이"
+CATEGORY = "MONSTER_SPACE_SHIP_2"
+#DESCRIPTION = "Stained worms are large, slow moving tubular life forms. Their skin has a green pigmentation that can range from being very light to being very dark, almost black. Though there in not much force behind its bite, the stainy worm's teeth inject a poisonous venom into whatever it bites. This makes the stainy worm a potentially deadly foe."
+DESCRIPTION = "얼룩무늬 지렁이는 크고 천천히 움직이는 환형 생물체이다. 이 지렁이의 표피는 전체적으로 녹색을 띠고 있지만 아주 밝은 부분과 아주 어두운 부분까지 다양한 빛깔을 내고 있다. 이 지렁이의 깨무는 힘은 강하지 않지만 지렁이의 오렴된 이빨은 맹독을 뿜어낸다. 따라서 이 지렁이는 매우 위험한 적이 될 수 있다."
+
+TILE = "w"
+COLOR = 2
+SIZE = 100
+WEIGHT = 12000
+HIT POINTS = 20
+
+strength = 15
+dexterity = 10
+speed = 15
+endurance = 8
+intelligence = 10
+metabolism = 10
+
+experience = 100
+
+unarmed = "작은 독 이빨"
+skin = "부드러운 피부"
+RESIST = Poison 50
+
+SOUND PAIN = "data/sounds/monsters/worm/pain.wav"
+SOUND DYING = "data/sounds/monsters/worm/die.wav"
+
+[ANIMAL]
+#NAME = "Flying Leech"
+NAME = "날아다니는 거머리"
+CATEGORY = "MONSTER_SPACE_SHIP_2"
+#DESCRIPTION = "This creature appears to be a large, black, flying leech. It is a scavenger, hovering about and attaching itself to a nearby organism. The leech, rather than killing the creature, paralyses it and waits for it to die, and then feasts on the remains."
+DESCRIPTION = "이 생물은 커다란 검은 거머리인데, 날아다닌다. 이 생물은 주변의 유기체에 달라붙어 뜯어먹고 다닌다. 이 거머리는 생물을 직접 죽이지 않고 마비시킨 뒤 죽을 때까지 기다린다."
+TILE = "b"
+COLOR = 12
+SIZE = 100
+WEIGHT = 10000
+HIT POINTS = 15
+
+strength = 13
+dexterity = 13
+speed = 30
+endurance = 8
+intelligence = 10
+metabolism = 20
+experience = 75
+skill = UNARMED 40
+
+unarmed = "마비 빨판"
+skin = "부드러운 피부"
+RESIST = Paralyze 50
+
+SOUND PAIN = "data/sounds/monsters/flyleech/pain.wav"
+SOUND DYING = "data/sounds/monsters/flyleech/die.wav"
+
+[ANIMAL]
+#NAME = "Genotroid"
+NAME = "제노트로이드"
+CATEGORY = "MONSTER_SPACE_SHIP_3"
+#DESCRIPTION = "The genotroid are a race of hunters that sport deadly, razor sharp claws and teeth as their weapons. You can run from a genotroid, but you can't hide - it will find you and kill you... Amongst the SpaceTroopers it is rumoured, that they were bred by the Enemy..."
+DESCRIPTION = "제노트로이드는 치명적이고 날카로운 발톱과 이빨을 무기로 사용하는 포식자이다. 우주군 사이에는 제노트로이드를 만나면 도망칠 수는 있어도 숨을 수는 없다는 소문이 있다."
+TILE = "A"
+COLOR = 8
+SIZE = 150
+WEIGHT = 60000
+HIT POINTS = 55
+
+experience = 350
+
+strength = 12
+dexterity = 15
+speed = 30
+endurance = 15
+intelligence = 5
+metabolism = 10
+
+skill = UNARMED 50
+RESIST = Poison 50
+
+unarmed = "제노트로이드 발톱"
+skin = "작은 털가죽"
+
+SOUND PAIN = "data/sounds/monsters/genotroid/pain.wav"
+SOUND DYING = "data/sounds/monsters/genotroid/die.wav"
+
+[ANIMAL]
+#NAME = "Two-headed Dog"
+NAME = "대가리 둘 달린 개"
+CATEGORY = "MONSTER_GENETIC_LAB_1"
+#DESCRIPTION = "This creature resembles a hideous two-headed canine. The product of some bizarre genetic experiment, it has a brown fur and two muzzles full of teeth."
+DESCRIPTION = "이 생물은 개 종류로 보이지만 머리가 두 개 달려 있다. 기묘한 유전 실험으로 인해 갈색 털가죽과 두 개의 대가리를 갖추게 된 듯하다."
+TILE = "d"
+COLOR = 6
+SIZE = 100
+WEIGHT = 7000
+HIT POINTS = 25
+
+strength = 10
+dexterity = 10
+speed = 35
+endurance = 5
+intelligence = 5
+metabolism = 20
+
+experience = 50
+skill = UNARMED 60
+
+unarmed = "이빨과 발톱"
+skin = "작은 털가죽"
+
+SOUND PAIN = "data/sounds/monsters/dog/pain.wav"
+SOUND DYING = "data/sounds/monsters/dog/die.wav"
+
+[ANIMAL]
+#NAME = "Giant Spider"
+NAME = "거대한 거미"
+CATEGORY = "MONSTER_GENETIC_LAB_2"
+#DESCRIPTION = "A giant green arachnid created as the result of genetic engineering. Who would want to make such a monstrous creature, you can only imagine."
+DESCRIPTION = "유전자 조작으로 만들어 낸 거대한 녹색 거미. 도대체 어떤 자가 이런 괴물을 만들어 낸 걸까?"
+TILE = "s"
+COLOR = 14
+SIZE = 40
+WEIGHT = 5000
+HIT POINTS = 40
+skill = UNARMED 80
+
+strength = 10
+dexterity = 12
+speed = 20
+endurance = 8
+intelligence = 6
+metabolism = 10
+
+experience = 250
+
+unarmed = "큰 독 이빨"
+skin = "작은 털가죽"
+
+RESIST = Poison 50
+
+SOUND PAIN = "data/sounds/monsters/spider/pain.wav"
+SOUND DYING = "data/sounds/monsters/spider/die.wav"
+
+[ANIMAL]
+#NAME = "Radioactive Spider"
+NAME = "방사능 거미"
+CATEGORY = "MONSTER_GENETIC_LAB_3"
+#DESCRIPTION = "A giant green arachnid created as the result of genetic engineering. Who would want to make such a monstrous creature, you can only imagine. This one is shining green!"
+DESCRIPTION = "유전자 조작으로 만들어 낸 거대한 녹색 거미. 도대체 어떤 자가 이런 괴물을 만들어 낸 걸까? 그런데 이 거미는 녹색으로 이글거리고 있다!"
+TILE = "s"
+COLOR = 13
+SIZE = 40
+WEIGHT = 5000
+HIT POINTS = 40
+skill = UNARMED 80
+
+strength = 12
+dexterity = 12
+speed = 20
+endurance = 8
+intelligence = 6
+metabolism = 10
+
+experience = 350
+
+unarmed = "큰 방사능 이빨"
+skin = "작은 털가죽"
+RESIST = Radioactive 50
+
+SOUND PAIN = "data/sounds/monsters/spider/pain.wav"
+SOUND DYING = "data/sounds/monsters/spider/die.wav"
+
+[ANIMAL]
+#NAME = "Vampire Bat"
+NAME = "흡혈 박쥐"
+CATEGORY = "MONSTER_GENETIC_LAB_2"
+#DESCRIPTION = "This flying mammal doesn't resemble the vampire bats that one would find on Earth. Instead of merely draining the blood of its victim, this creature uses its fangs to metabolise the player's haemoglobin in order to heal its own wounds. Add that to the fact that it moves extremely fast, and you've got one deadly predator."
+DESCRIPTION = "이 날아다니는 포유류 생물은 지구에 있는 흡혈 박쥐와는 격이 다르다. 이 생물은 단순히 피만 빠는 것이 아니라 헤모글로빈을 흡수하여 스스로의 부상을 치료하는데 쓴다. 하나 더 추가하자면 이 생물은 극도로 빠르다. 아무래도 포식자가 또 하나 나타난 것 같다."
+TILE = "b"
+COLOR = 7
+SIZE = 30
+WEIGHT = 5000
+HIT POINTS = 30
+skill = UNARMED 70
+
+strength = 6
+dexterity = 20
+speed = 40
+endurance = 8
+intelligence = 3
+metabolism = 20
+
+experience = 75
+
+unarmed = "흡혈 이빨"
+skin = "작은 털가죽"
+
+SOUND PAIN = "data/sounds/monsters/flyleech/pain.wav"
+SOUND DYING = "data/sounds/monsters/flyleech/die.wav"
+
+[ANIMAL]
+#NAME = "Walking Octopus"
+NAME = "걸어다니는 문어"
+CATEGORY = "MONSTER_GENETIC_LAB_2"
+#DESCRIPTION = "A huge cephalopod, artificially engineered to live out of the water. Amazingly enough, this squid-like creature walks on four of its massive tentacles, reserving the other four for manipulating the world around it. This includes using its toxin-covered limbs to eliminate other life forms, such as yourself..."
+DESCRIPTION = "이 거대한 문어는 물밖에 나와 살도록 번형되었다. 놀랍게도 이 문어는 거대한 촉수 네 개를 이용해 땅 위를 걸어다니고, 나머지 네 개의 촉수로 주변의 사물들을 파괴한다. 이 촉수에는 독이 묻어 있어 생물체를 제거하기에 접합하다. 나를 포함해서..."
+TILE = "J"
+COLOR = 10
+SIZE = 130
+WEIGHT = 15000
+HIT POINTS = 30
+skill = UNARMED 90
+
+strength = 6
+dexterity = 8
+speed = 20
+endurance = 8
+intelligence = 3
+metabolism = 45
+
+experience = 150
+
+unarmed = "독 촉수"
+skin = "부드러운 피부"
+RESIST = Radioactive 50
+RESIST = Poison 50
+RESIST = Paralyze 50
+
+SOUND PAIN = "data/sounds/monsters/octopus/pain.wav"
+SOUND DYING = "data/sounds/monsters/octopus/die.wav"
+
+[ANIMAL]
+#NAME = "Red Centipede"
+NAME = "빨간색 지네"
+CATEGORY = "MONSTER_GENETIC_LAB_1"
+DESCRIPTION = "이 거대한 빨간색 지네는 은하 지네와 비슷하게 생겼지만 훨씬 더 크고 강력하다. 이 괴물이 다가오면 극도로 긴장하게 된다."
+TILE = "w"
+COLOR = 4
+SIZE = 130
+WEIGHT = 15000
+HIT POINTS = 20
+skill = UNARMED 80
+
+strength = 12
+dexterity = 10
+speed = 25
+endurance = 8
+intelligence = 3
+metabolism = 10
+
+experience = 50
+skill = UNARMED 90
+
+unarmed = "작은 발톱"
+skin = "갑각류 껍데기"
+
+RESIST = Fire 50
+RESIST = Radioactive 50
+
+SOUND PAIN = "data/sounds/monsters/worm/pain.wav"
+SOUND DYING = "data/sounds/monsters/worm/die.wav"
+
+[ANIMAL]
+#NAME = "Green Centipede"
+NAME = "초록색 지네"
+CATEGORY = "MONSTER_GENETIC_LAB_3"
+#DESCRIPTION = "At first all you heard was the clicking sound made by its monstrous legs. Slowly the sound grew louder and louder as the creature began to draw near. Then its green chitin shell emerged from the shadows, and you glimpsed it with your own two eyes. It resembled the kind of creature that you'd expect to find sleeping beneath a rock during the day, or be horrified to find crawling up your leg by night, only this specimen was a hundred times larger and a hundred times more horrifying. Surely this thing could only have been conceived in the laboratory of some deranged, mad scientist. Flee, flee while you still can..."
+DESCRIPTION = "처음에는 괴물같은 발들이 달그락거리는 소리가 들린다. 그리고 그 소리는 점점 더 크게 들려오면서 이 괴물이 다가온다는 것을 알게 한다. 그리고는 이 녹색 껍데기로 뒤덮인 괴물이 어둠 속에서 모습을 드러낸다. 이 생물은 낮에 풀밭에서 돌을 들어보면 낮잠을 자고 있을, 또는 밤에 갑자기 나타나 사람을 놀라게 할 그 생물을 닮았으나, 비교하자면 이 녀석이 수백배 더 크고 수백배 더 징그럽다. 분명 어느 미친 과학자가 이런 생물을 만들어 낸 것 같다. 도망치자. 아직 도망칠 수 있을 때 도망치자..."
+TILE = "w"
+COLOR = 2
+SIZE = 130
+WEIGHT = 15000
+HIT POINTS = 40
+skill = UNARMED 100
+
+strength = 13
+dexterity = 13
+
+speed = 20
+endurance = 12
+intelligence = 3
+metabolism = 30
+
+experience = 250
+
+unarmed = "큰 발톱"
+skin = "갑각류 껍데기"
+
+RESIST = Poison 50
+RESIST = Radioactive 50
+
+SOUND PAIN = "data/sounds/monsters/worm/pain.wav"
+SOUND DYING = "data/sounds/monsters/worm/die.wav"
+
+[ANIMAL]
+#NAME = "Blue Mouse"
+NAME = "파란색 쥐"
+CATEGORY = "MONSTER_GENETIC_LAB_1"
+#DESCRIPTION = "A small neon-blue mouse that skits about the floor. You have no idea why someone would want to engineer a blue mouse, unless the man who created it was completely insane."
+DESCRIPTION = "파란 빛을 내는 쥐. 무슨 목적으로 파란색 쥐를 만들어 낸 걸까? 아무래도 완전히 제 정신이 아닌 것 같다."
+TILE = "r"
+COLOR = 1
+SIZE = 30
+WEIGHT = 3000
+HIT POINTS = 10
+skill = UNARMED 50
+
+strength = 5
+dexterity = 10
+speed = 30
+endurance = 8
+intelligence = 8
+metabolism = 25
+
+experience = 5
+
+unarmed = "작은 발톱"
+skin = "작은 털가죽"
+
+RESIST = Electricity 100
+RESIST = Fire 100
+RESIST = Poison 100
+RESIST = Radioactive 100
+RESIST = Stun 100
+
+SOUND PAIN = "data/sounds/monsters/rat/pain.wav"
+SOUND DYING = "data/sounds/monsters/rat/die.wav"
+
+[ANIMAL]
+#NAME = "Bloody Rabbit"
+NAME = "피투성이 토끼"
+CATEGORY = "MONSTER_GENETIC_LAB_2"
+#DESCRIPTION = "At first glance this may appear to be a small rabbit, the kind that people often keep as pets. As it gets closer, and you glimpse it in the light, you see that this is not ordinary bunny. The organism's fur is covered with layer upon layer of blood, some of it brown and dry, but some of it red and fresh. The creature's eyes glisten with an unholy light and reveals the beasts true nature. It is a killer, and it cannot wait to sink its vorpal fangs into your flesh..."
+DESCRIPTION = "얼핏 봤을 때는 사람들이 애완용으로 키우곤 하는 작은 토끼로 보인다. 하지만 가까이에서 살펴보면 이것이 평범한 토끼가 아님을 알 수 있다. 이 생물체의 털은 피로 범벅져 있으며 일부는 말라붙어 갈색을 띄고 있지만, 일부는 신선한 붉은 빛을 띄고 있다. 이 생물체의 눈은 사악하게 빛나며 이 생물체의 진정한 본성을 드러내고 있다. 이 생물은 포식자이며 지금 당장 저 끔찍한 앞니로 내 장기를 파먹기 위해 달려들 것이다..."
+TILE = "r"
+COLOR = 7
+SIZE = 80
+WEIGHT = 7000
+HIT POINTS = 10
+skill = UNARMED 80
+
+strength = 11
+dexterity = 10
+speed = 30
+endurance = 8
+intelligence = 4
+metabolism = 25
+
+experience = 200
+
+unarmed = "날카로운 이빨"
+skin = "작은 털가죽"
+
+SOUND PAIN = "data/sounds/monsters/rabbit/pain.wav"
+SOUND DYING = "data/sounds/monsters/rabbit/die.wav"
+
+[ANIMAL]
+#NAME = "Giant Wasp"
+NAME = "거대 말벌"
+CATEGORY = "MONSTER_GENETIC_LAB_1"
+#DESCRIPTION = "This creature appears to be a gigantic version of the common wasp. Hovering several feet above the ground, its hard exoskeleton offers excellent protection, while its foot-long stinger is sure to make quite an impression on its next meal..."
+DESCRIPTION = "이 생물은 보통 말벌이 초거대화된 것이다. 십여 미터 상공에서 웅웅거리며 날고 있다. 이 생물체는 딱딱한 껍질 때문에 공격이 잘 통하지 않으며 특히 사람의 다리 만한 독침을 갖고 있어 그것에 찔리게 될 다음 사냥감은 깊은 인상을 받을 것 같다..."
+TILE = "b"
+COLOR = 14
+SIZE = 40
+WEIGHT = 5000
+HIT POINTS = 25
+
+strength = 9
+dexterity = 10
+speed = 30
+endurance = 8
+intelligence = 4
+metabolism = 25
+
+experience = 125
+
+unarmed = "침"
+skin = "딱딱한 피부"
+
+RESIST = Poison 50
+skill = UNARMED 50
+
+SOUND PAIN = "data/sounds/monsters/wasp/pain.wav"
+SOUND DYING = "data/sounds/monsters/wasp/die.wav"
+
+[ANIMAL]
+#NAME = "Tentacle Bear"
+NAME = "촉수 달린 곰"
+CATEGORY = "MONSTER_GENETIC_LAB_3"
+#DESCRIPTION = "A truly bizarre creature, it has the body of a large, fearsome bear, and the venomous arms of a cephalopod. As with everything else in this lab, the tentacle bear was probably conceived in a test-tube."
+DESCRIPTION = "진정으로 기묘한 괴수이다. 거대하고 무시무시한 곰의 몸에 맹독을 분비하는 촉수가 팔로 달려 있다. 이 연구실 내의 실험 도구들을 보았을 때 아마도 이 촉수 달린 곰도 실험의 결과물인 듯하다."
+TILE = "J"
+COLOR = 6
+SIZE = 140
+WEIGHT = 45000
+HIT POINTS = 55
+skill = UNARMED 80
+
+strength = 15
+dexterity = 10
+speed = 25
+endurance = 15
+intelligence = 4
+metabolism = 35
+
+experience = 150
+
+unarmed = "마비 독 촉수"
+skin = "딱딱한 피부"
+
+RESIST = Poison 100
+
+SOUND PAIN = "data/sounds/monsters/bear/pain.wav"
+SOUND DYING = "data/sounds/monsters/bear/die.wav"
+
+[INTELLIGENT]
+#NAME = "Snake Man"
+NAME = "뱀 인간"
+CATEGORY = "MONSTER_GENETIC_LAB_3"
+#DESCRIPTION = "A truly horrible hybrid. It has a humanoid body, but it is lacking human skin. Instead it is covered by layer upon layer of thick reptilian scales that extend all the way from its head down to its body, arms, legs and snake-like tail. It's yellow serpentine eyes seem to glow with a light of their own, while its forked tongue constantly flicks out of its head, seeking the scent of its next victim. This doesn't look like the kind of being you would expect to find outside of a fictions, fantasy world."
+DESCRIPTION = "진정 끔찍한 혼합물이다. 이 생물은 인간의 신체를 갖고 있으나 피부는 인간의 것이 아니다. 인간의 피부 대신 뱀의 비늘이 머리, 몸, 팔, 다리, 그리고 꼬리까지 온몸을 뒤덮고 있다. 인간의 눈 대신에 싯누런 뱀 눈까리가 달려 있다. 이 괴물은 납작한 혓바닥을 끈임없이 날름거리며 다음 먹잇감을 찾고 있다. 이 괴물은 보통 판타지 소설에 등장할 법한 생물과는 격이 다르다.
+TILE = "H"
+COLOR = 2
+SIZE = 100
+WEIGHT = 75000
+HIT POINTS = 45
+
+strength = 12
+dexterity = 20
+speed = 20
+endurance = 15
+intelligence = 10
+metabolism = 30
+
+skill = MELEE WEAPONS 40
+skill = UNARMED 40
+
+experience = 250
+
+unarmed = "맨손"
+skin = "딱딱한 비늘"
+
+CATEGORY ITEM = "WEAPON_H2H_IMPROVISED_2"
+CATEGORY ITEM = "WEAPON_RANGE_IMPROVISED_2"
+
+AI RESTRIRCTIONS = DONT USE HEALING | DONT USE GRENADES
+RESIST = Poison 100
+
+SOUND PAIN = "data/sounds/monsters/snakeman/pain.ogg"
+SOUND DYING = "data/sounds/monsters/snakeman/die.ogg"
+
+[ROBOT]
+#NAME = "Sentry Gun"
+NAME = "센트리건"
+CATEGORY = "MONSTER_SENTRY_GUN_1"
+#DESCRIPTION = "This is your standard revolving sentry gun, composed of a steel cylindrical base with an automated gun turret mounted on top. The turret sports a fully automatic machinegun that makes up for its low stopping power with a fast fire rate."
+DESCRIPTION = "이 로봇은 표준 센트리건이다. 실린더 형의 강철 본체와 자동 총기 터렛으로 구성되어 있다. 터렛은 엄청난 연사 속도로 적을 제압한다."
+SHELL = "소형 고정 로봇 본체"
+CPU = "센트리건 프로세서"
+Action Slot = "표준형 센트리건 라이플"
+Action Slot = 42 "6.25mm 라이플탄"
+experience = 100
+
+SOUND DYING = "data/sounds/monsters/robot2/die.wav"
+
+[ROBOT]
+#NAME = "Tutorial Target"
+NAME = "튜토리얼 타겟"
+CATEGORY = "MONSTER_UNIQUE"
+DESCRIPTION = "Tutorial Round Target"
+SHELL = "튜토리얼 타겟 본체"
+CPU = "튜토리얼 타겟 프로세서"
+experience = 1
+
+[ROBOT]
+#NAME = "Razor Robot"
+NAME = "칼날 로봇"
+CATEGORY = "MONSTER_SMALL_ROBOT_1"
+#DESCRIPTION = "A small spherical robot that moves about quickly upon a single wheel. Attached to the robot's body is a small, circular saw with a razor-sharp edge. This machine was probably designed as some sort of construction droid, whose task would be to cut metal or some other sort of material. It seems to have malfunctioned, however, and had designated you as a material that it can cut as well..."
+DESCRIPTION = "이 작은 원형 로봇에는 한 개의 바퀴가 달려 있으며 신속하게 이동한다. 로봇의 본체에는 작고 날카로운 회전 칼날이 달려 있다. 이 기계는 원래 공업용으로 이용할 목적으로 생산된 것으로 금속 등의 물질을 절단하는 것이 원래의 임무였다. 그런데 지금 이 로봇은 오작동을 일으켰는지 나 또한 잘라야 할 금속으로 판단하고 있는 듯하다..."
+SHELL = "소형 신속 로봇 본체"
+CPU = "단순한 탐색 프로세서"
+Action Slot = "소형 칼날"
+Move Slot = "고무제 로봇 바퀴"
+
+experience = 200
+
+SOUND DYING = "data/sounds/monsters/robot1/die.wav"
+
+[ROBOT]
+#NAME = "Small Walking Bomb v1"
+NAME = "소형 보행 폭탄 v1"
+CATEGORY = "MONSTER_WALKING_BOMB_1"
+#DESCRIPTION = "A small 'walking' robot that doesn't really walk; rather, it travels along upon a small wheel. Attached to this machine is a small bomb, and once it gets close enough to its target, it detonates, destroying itself along with anything nearby."
+DESCRIPTION = "이 작은 '걸어다니는' 폭탄은 실제로는 걸어다니는 게 아니라, 작은 바퀴로 움직인다. 이 기계에는 작은 폭탄이 설치되어 있어 로봇이 목표물에 접근하면 폭발해 자기 자신과 주변의 사물을 파괴한다."
+SHELL = "소형 검은색 신속 로봇 본체"
+CPU = "보행 폭탄 프로세서"
+Action Slot = "수류탄"
+Move Slot = "고무제 로봇 바퀴"
+experience = 200
+
+SOUND DYING = "data/sounds/monsters/robot1/die.wav"
+
+[ROBOT]
+#NAME = "Small Walking Bomb v2"
+NAME = "걸어다니는 폭탄 v2"
+CATEGORY = "MONSTER_WALKING_BOMB_1"
+#DESCRIPTION = "A small 'walking' robot that doesn't really walk; rather, it travels along upon a small wheel. Attached to this machine is a fire bomb, and once it gets close enough to its target, it detonates, erupting into a pool of liquid flame."
+DESCRIPTION = "이 작은 '걸어다니는' 폭탄은 실제로는 걸어다니는 게 아니라, 작은 바퀴로 움직인다. 이 기계에는 작은 폭탄이 설치되어 있어 로봇이 목표물에 접근하면 폭발해 주변을 액체 화염으로 뒤덮는다."
+SHELL = "소형 검은색 신속 로봇 본체"
+CPU = "보행 폭탄 프로세서"
+Action Slot = "가연성 수류탄"
+Move Slot = "고무제 로봇 바퀴"
+experience = 200
+
+SOUND DYING = "data/sounds/monsters/robot1/die.wav"
+
+[ROBOT]
+#NAME = "Commando Droid"
+NAME = "코만도 드로이드"
+CATEGORY = "MONSTER_MEDIUM_ROBOT_1"
+DESCRIPTION = "! NOT WRITTEN YET !"
+SHELL = "중형 기동 로봇 본체"
+CPU = "ED710 CPU"
+Action Slot = "중형 칼날"
+Action Slot = "표준형 센트리건 라이플"
+Action Slot = 50 "6.25mm 라이플탄"
+Move Slot = "철제 로봇 다리"
+Move Slot = "철제 로봇 다리"
+experience = 500
+
+SOUND DYING = "data/sounds/monsters/robot3/die.wav"
+
+[ROBOT]
+#NAME = "Utility Bot"
+NAME = "유틸리티봇"
+CATEGORY = "MONSTER_UTILITY_BOT"
+#DESCRIPTION = "A small robot that travels about upon its caterpillar-like legs, picking up trash and garbage. This unit is relatively inexpensive (only 200 credits on the NJoyShopping network) and it is remarkably efficient for its size, making it fairly common and wide spread."
+DESCRIPTION = "이 소형 로봇은 카터필라를 이용해 주변을 돌아다니며 쓰레기를 수거한다. 이 로봇은 비교적 저렴한 편이며 (앤조이쇼핑 네트워크에서 200 크레딧 정도면 살 수 있다.) 크기에 비해 효율적이라 널리 사용되고 있다."
+SHELL = "유틸리티봇 본체"
+CPU = "유틸리티봇 프로세서"
+Action Slot = "청소기"
+Move Slot = "철제 로봇 카터필라"
+experience = 5
+SOUND DYING = "data/sounds/monsters/robot2/die.wav"
+
+[ROBOT]
+#NAME = "Bunker Gun"
+NAME = "벙커건"
+CATEGORY = "MONSTER_UNIQUE"
+#DESCRIPTION = "The bunker gun."
+DESCRIPTION = "벙커건."
+SHELL = "벙커건 본체"
+CPU = "벙커건 프로세서"
+Action Slot = "벙커건 캐논"
+experience = 2000
+SOUND DYING = "data/sounds/monsters/robot3/die.wav"
+
+[SEARCHLIGHT]
+#NAME = "Searchlight"
+NAME = "서치라이트"
+CATEGORY = "MONSTER_UNIQUE"
+TILE = "#"
+COLOR = 14
+SIZE = 150
+WEIGHT = 200000
+HIT POINTS = 50
+experience = 1000
+
+unarmed = "불빛"
+skin = "서치라이트 본체"
+DESCRIPTION = "An immense searchlight, like the kind often used by the military in days long since passed. This particular model is extremely large and bright, and is designed to aide the bunker guns in spotting and eliminating all possible intruders."
+DESCRIPTION = "과거 군사용으로 사용되던 거대한 서치라이트. 특히 이 모델은 규모가 매우 크고 밝기 또한 매우 밝은 편으로, 벙커건이 침입자들을 몰살할 수 있도록 보조하고 있다."
+
+SOUND DYING = "data/sounds/monsters/searchlight/die.wav"
+
+[WORM]
+#NAME = "Giant Red Worm Head"
+NAME = "거대한 빨간색 지렁이 대가리"
+CATEGORY = "MONSTER_GIANT_WORM_1"
+DESCRIPTION = "! NOT WRITTEN YET !"
+TILE = "W"
+COLOR = 12
+SIZE = 100
+WEIGHT = 50000
+HIT POINTS = 45
+
+skill = UNARMED 60
+strength = 12
+dexterity = 8
+speed = 20
+endurance = 20
+intelligence = 5
+metabolism = 10
+
+experience = 400
+length = 4
+segment = "거대한 빨간색 지렁이 몸통"
+tail = "거대한 빨간색 지렁이 꼬리"
+
+unarmed = "거대한 아가리"
+skin = "딱딱한 피부"
+
+SOUND PAIN = "data/sounds/monsters/worm/pain.wav"
+SOUND DYING = "data/sounds/monsters/worm/die.wav"
+
+[WORM]
+#NAME = "Giant Red Worm Segment"
+NAME = "거대한 빨간색 지렁이 몸통"
+CATEGORY = "MONSTER_UNIQUE"
+DESCRIPTION = "! NOT WRITTEN YET !"
+TILE = "W"
+COLOR = 4
+SIZE = 100
+WEIGHT = 50000
+HIT POINTS = 35
+
+skill = UNARMED 60
+strength = 10
+dexterity = 8
+speed = 20
+endurance = 20
+intelligence = 5
+metabolism = 10
+
+experience = 300
+segment = "거대한 빨간색 지렁이 몸통"
+tail = "거대한 빨간색 지렁이 꼬리"
+
+unarmed = "지렁이 몸통"
+skin = "딱딱한 피부"
+
+SOUND PAIN = "data/sounds/monsters/worm/pain.wav"
+SOUND DYING = "data/sounds/monsters/worm/die.wav"
+
+
+[WORM]
+#NAME = "Giant Red Worm Tail"
+NAME = "거대한 빨간색 지렁이 꼬리"
+CATEGORY = "MONSTER_UNIQUE"
+DESCRIPTION = "! NOT WRITTEN YET !"
+TILE = "W"
+COLOR = 6
+SIZE = 100
+WEIGHT = 50000
+HIT POINTS = 45
+
+skill = UNARMED 80
+strength = 12
+dexterity = 8
+speed = 20
+endurance = 20
+intelligence = 5
+metabolism = 10
+
+experience = 300
+
+unarmed = "지렁이 꼬리"
+skin = "딱딱한 피부"
+
+SOUND PAIN = "data/sounds/monsters/worm/pain.wav"
+SOUND DYING = "data/sounds/monsters/worm/die.wav"
